@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    {% set metaTitle = title or site.name %}
+    {% set metaDescription = description or summary or site.description %}
+    {% set canonicalUrl = canonical_url or site.url + page.url %}
+    {% set metaImage = (featured_image or "/assets/theVault.png") | absoluteUrl(site.url) %}
+    {% set isArticle = page.inputPath | isVaultArticle %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if metaTitle and metaTitle != site.name %}{{ metaTitle }} | {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="canonical" href="{{ canonicalUrl }}">
+    <link rel="icon" href="/assets/white-lion.png" type="image/png">
+    <link rel="alternate" href="/feeds/rss.xml" type="application/rss+xml" title="{{ site.name }}">
+    <link rel="alternate" href="/feeds/vault.json" type="application/feed+json" title="{{ site.name }}">
+    <meta property="og:type" content="{% if isArticle %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    <meta property="og:url" content="{{ canonicalUrl }}">
+    <meta property="og:image" content="{{ metaImage }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ metaTitle }}">
+    <meta name="twitter:description" content="{{ metaDescription }}">
+    <meta name="twitter:image" content="{{ metaImage }}">
+    {% if isArticle and date %}
+    <meta property="article:published_time" content="{{ date | isoDate }}">
+    {% endif %}
+    {% if isArticle %}
+    {% for topic in topics or [] %}
+    <meta property="article:tag" content="{{ topic }}">
+    {% endfor %}
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Article", "BlogPosting"],
+  "headline": {{ metaTitle | json | safe }},
+  "description": {{ metaDescription | json | safe }},
+  "url": {{ canonicalUrl | json | safe }},
+  "mainEntityOfPage": {{ canonicalUrl | json | safe }},
+  "image": {{ metaImage | json | safe }},
+  "author": {
+    "@type": "Person",
+    "name": "James Burchill",
+    "url": "https://JamesBurchill.com"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "James Burchill",
+    "url": "https://JamesBurchill.com"
+  }{% if date %},
+  "datePublished": {{ date | isoDate | json | safe }}{% endif %}{% if original_url %},
+  "isBasedOn": {{ original_url | json | safe }}{% endif %}
+}
+    </script>
+    {% endif %}
+    <link rel="stylesheet" href="/assets/stylesheets/extra.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img src="/assets/white-lion.png" alt="" width="52" height="52">
+        <span>{{ site.name }}</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/content/">Content</a>
+        <a href="/now/">Now</a>
+        <a href="/about/">About</a>
+        <a href="{{ site.repository }}">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <article class="content">
+        {{ content | safe }}
+        {% if page.inputPath | isVaultArticle %}
+        <p class="source-link"><a href="{{ page.inputPath | sourceUrl(site.repository) }}">View source Markdown</a></p>
+        {% endif %}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Copyright {{ site.copyrightYear }} ~ <a href="https://JamesBurchill.com">JamesBurchill.com</a></span>
+      <span>Markdown source is canonical.</span>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/feeds/vault.json">JSON feed</a>
+      <a href="/feeds/rss.xml">RSS</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </footer>
+    <script>
+      (() => {
+        document.querySelectorAll("[data-archive-browser]").forEach((archive) => {
+          const years = archive.querySelectorAll("[data-archive-year]");
+          const panels = archive.querySelectorAll("[data-archive-panel]");
+
+          years.forEach((year) => {
+            year.addEventListener("click", () => {
+              const selectedYear = year.dataset.archiveYear;
+
+              years.forEach((candidate) => {
+                candidate.classList.toggle("is-current", candidate === year);
+              });
+
+              panels.forEach((panel) => {
+                const isSelected = panel.dataset.archivePanel === selectedYear;
+                panel.hidden = !isSelected;
+                panel.classList.toggle("is-current", isSelected);
+              });
+            });
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

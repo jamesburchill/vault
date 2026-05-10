@@ -1,0 +1,30 @@
+---
+permalink: /feeds/vault.json
+layout: false
+eleventyExcludeFromCollections: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": {{ site.name | json | safe }},
+  "home_page_url": {{ site.url | json | safe }},
+  "feed_url": {{ (site.url + "/feeds/vault.json") | json | safe }},
+  "description": {{ site.description | json | safe }},
+  "authors": [
+    {
+      "name": "James Burchill",
+      "url": "https://jamesburchill.com/"
+    }
+  ],
+  "items": [
+{%- for item in collections.vaultContent %}
+    {
+      "id": {{ (site.url + item.url) | json | safe }},
+      "url": {{ (site.url + item.url) | json | safe }},
+      "title": {{ (item.data.title or item.fileSlug) | json | safe }},
+      "summary": {{ (item.data | summary) | json | safe }}{% if item.data.date %},
+      "date_published": {{ item.data.date | isoDate | json | safe }}{% endif %}{% if item.data | topics %},
+      "tags": {{ (item.data | topics) | json | safe }}{% endif %}
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}

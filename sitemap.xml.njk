@@ -1,0 +1,35 @@
+---
+permalink: /sitemap.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/about/</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/now/</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/content/</loc>
+  </url>
+{%- for item in collections.vaultContent %}
+  <url>
+    <loc>{{ site.url }}{{ item.url }}</loc>
+  </url>
+{%- endfor %}
+{%- for year in collections.vaultYears %}
+  <url>
+    <loc>{{ site.url }}{{ year.url }}</loc>
+  </url>
+{%- endfor %}
+{%- for month in collections.vaultMonths %}
+  <url>
+    <loc>{{ site.url }}{{ month.url }}</loc>
+  </url>
+{%- endfor %}
+</urlset>

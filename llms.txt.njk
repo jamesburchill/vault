@@ -1,0 +1,31 @@
+---
+permalink: /llms.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# The Vault - James Burchill
+
+This is the public Markdown source vault for James Burchill.
+
+Canonical site: {{ site.url }}/
+
+Repository: {{ site.repository }}
+
+Primary source areas:
+
+- / - vault home
+- /about.md - source conventions and rationale
+- /now.md - current public context
+- /content/ - dated writing, notes, references, and source material
+- /feeds/vault.json - machine-readable feed metadata
+- /feeds/rss.xml - RSS feed
+
+The Markdown files in this repository are the canonical source. Generated HTML exists for browser readability.
+
+## Content
+
+{% for item in collections.vaultContent %}
+- {{ item.data.title or item.fileSlug }}: {{ site.url }}{{ item.url }}{% if item.data | summary %} - {{ item.data | summary }}{% endif %}
+{% else %}
+- No content has been published yet.
+{% endfor %}

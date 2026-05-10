@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections.wordpressRedirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.data.original_url | oldWordPressPath }}"
+layout: false
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting to {{ redirect.data.title or redirect.fileSlug }}</title>
+    <link rel="canonical" href="{{ site.url }}{{ redirect.url }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ redirect.url }}">
+  </head>
+  <body>
+    <p>This page has moved to <a href="{{ redirect.url }}">{{ site.url }}{{ redirect.url }}</a>.</p>
+  </body>
+</html>
