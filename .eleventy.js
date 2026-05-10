@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("site/**");
   eleventyConfig.ignores.add("node_modules/**");
   eleventyConfig.ignores.add("README.md");
+  eleventyConfig.ignores.add("AGENTS.md");
 
   eleventyConfig.addGlobalData("layout", "layout.njk");
   eleventyConfig.addGlobalData("site", {
