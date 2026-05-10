@@ -50,4 +50,4 @@ Curious to hear where the idea resonates – or where it breaks.
 
 Stay frosty. ~ James
 
-[Because Drift Happens](/assets/2026/05/drift-is-the-default-free-download-because-drift-happens.pdf)[Download](/assets/2026/05/drift-is-the-default-free-download-because-drift-happens.pdf)
+[Download](/assets/2026/05/drift-is-the-default-free-download-because-drift-happens.pdf)
