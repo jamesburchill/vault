@@ -1,3 +1,5 @@
+const path = require("node:path");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -78,6 +80,29 @@ module.exports = function (eleventyConfig) {
     }
 
     return pathname;
+  }
+
+  function relativeSiteUrl(value, fromUrl) {
+    if (!value || !value.startsWith("/") || value.startsWith("//")) {
+      return value;
+    }
+
+    const [, pathname, suffix = ""] = value.match(/^([^?#]*)([?#].*)?$/);
+    const fromPath = String(fromUrl || "/").replace(/^\//, "").replace(/\/$/, "");
+    const targetPath = pathname.replace(/^\//, "").replace(/\/$/, "");
+    const relativePath = path.posix.relative(fromPath, targetPath) || ".";
+
+    return `${relativePath}${pathname.endsWith("/") && relativePath !== "." ? "/" : ""}${suffix}`;
+  }
+
+  function rewriteRootRelativeUrls(content, pageUrl) {
+    return content
+      .replace(/\b(href|src)=(["'])(\/(?!\/)[^"']*)\2/g, (_match, attribute, quote, value) => {
+        return `${attribute}=${quote}${relativeSiteUrl(value, pageUrl)}${quote}`;
+      })
+      .replace(/(content=(["'])\s*\d+\s*;\s*url=)(\/(?!\/)[^"']*)(\2)/gi, (_match, prefix, _quote, value, suffix) => {
+        return `${prefix}${relativeSiteUrl(value, pageUrl)}${suffix}`;
+      });
   }
 
   eleventyConfig.addCollection("vaultContent", function (collectionApi) {
@@ -242,6 +267,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("oldWordPressPath", oldWordPressPath);
+
+  eleventyConfig.addTransform("relativeInternalUrls", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) {
+      return content;
+    }
+
+    return rewriteRootRelativeUrls(content, this.page.url);
+  });
 
   return {
     dir: {
