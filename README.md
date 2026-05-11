@@ -18,7 +18,7 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 - `content/YYYY/MM/*.md` contains dated articles, notes, and source material.
 - `assets/YYYY/MM/` contains images and supporting files for dated content.
 - `assets/` contains shared site assets such as logos and icons.
-- `feeds/vault.json.njk`, `feeds/rss.xml.njk`, `llms.txt.njk`, and `sitemap.xml.njk` generate machine-readable discovery files.
+- `search-index.json.njk`, `feeds/vault.json.njk`, `feeds/rss.xml.njk`, `llms.txt.njk`, and `sitemap.xml.njk` generate machine-readable discovery files.
 - `404.md` controls the GitHub Pages not-found page.
 - `redirects.njk` generates static redirect pages for imported WordPress URLs using `original_url`.
 
@@ -70,6 +70,20 @@ canonical_url: ""
 ```
 
 Use `original_url` for imported legacy URLs. Use `featured_image` for social previews and article metadata. Leave `canonical_url` blank unless the canonical URL should deliberately point somewhere other than the generated vault URL.
+
+## Machine-Readable Publishing
+
+Markdown files in `content/YYYY/MM/` are canonical. JSON, RSS, `llms.txt`, and sitemap files are generated projections from that Markdown during the Eleventy build.
+
+Generated public artefacts include:
+
+- `/search-index.json` for lightweight search, AI, and discovery metadata.
+- `/feeds/vault.json` for JSON Feed consumers.
+- `/feeds/rss.xml` for RSS readers.
+- `/llms.txt` for AI-oriented discovery.
+- `/sitemap.xml` for crawler discovery.
+
+The generated JSON is not maintained by hand. Run `make build` or `npm run build` locally to validate content metadata and regenerate the public artefacts into `_site/`. The GitHub Pages workflow runs the same build on every push to `main`.
 
 ## Images
 

@@ -1,0 +1,32 @@
+---
+permalink: /search-index.json
+layout: false
+eleventyExcludeFromCollections: true
+---
+{
+  "version": 1,
+  "title": {{ site.name | json | safe }},
+  "home_page_url": {{ (site.url + "/") | json | safe }},
+  "feed_url": {{ (site.url + "/search-index.json") | json | safe }},
+  "generated_at": {{ site.buildDate | isoDate | json | safe }},
+  "items": [
+{%- for item in collections.vaultContent %}
+    {
+      "id": {{ (site.url + item.url) | json | safe }},
+      "title": {{ (item.data.title or item.fileSlug) | json | safe }},
+      "slug": {{ (item.data.slug or item.fileSlug) | json | safe }},
+      "url": {{ (site.url + item.url) | json | safe }},
+      "source_path": {{ item.inputPath | sourcePath | json | safe }},
+      "repo_url": {{ item.inputPath | sourceUrl(site.repository) | json | safe }},
+      "markdown_url": {{ item.inputPath | rawSourceUrl(site.repository) | json | safe }},
+      "raw_markdown_url": {{ item.inputPath | rawSourceUrl(site.repository) | json | safe }},
+      "date_published": {{ item.data.date | dateOnly | json | safe }},
+      "type": "article",
+      "status": {{ (item.data.status or "published") | json | safe }},
+      "topics": {{ (item.data | topics) | json | safe }},
+      "summary": {{ (item.data | summary) | json | safe }},
+      "featured_image": {{ ((item.data.featured_image or "") | absoluteUrl(site.url)) | json | safe }}
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}

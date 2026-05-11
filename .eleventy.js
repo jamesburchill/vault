@@ -1,4 +1,5 @@
 const path = require("node:path");
+const fs = require("node:fs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
@@ -34,6 +35,109 @@ module.exports = function (eleventyConfig) {
     }
 
     return new Date(0);
+  }
+
+  function sourcePath(inputPath) {
+    return String(inputPath || "").replace(/^\.\//, "");
+  }
+
+  function isVaultArticlePath(inputPath) {
+    return /^content\/\d{4}\/\d{2}\/[^/]+\.md$/.test(sourcePath(inputPath));
+  }
+
+  function vaultArticleItems(collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("content/**/*.md")
+      .filter((item) => isVaultArticlePath(item.inputPath));
+  }
+
+  function encodeSourcePath(inputPath) {
+    return sourcePath(inputPath).split("/").map(encodeURIComponent).join("/");
+  }
+
+  function frontMatterFields(inputPath) {
+    const content = fs.readFileSync(sourcePath(inputPath), "utf8");
+    const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+
+    if (!match) {
+      return new Set();
+    }
+
+    return new Set(
+      match[1]
+        .split(/\r?\n/)
+        .map((line) => line.match(/^([A-Za-z0-9_-]+):(?:\s|$)/))
+        .filter(Boolean)
+        .map((field) => field[1])
+    );
+  }
+
+  function repositorySourceUrl(inputPath, repository) {
+    return `${repository}/blob/main/${encodeSourcePath(inputPath)}`;
+  }
+
+  function repositoryRawSourceUrl(inputPath, repository) {
+    const encodedPath = encodeSourcePath(inputPath);
+
+    try {
+      const url = new URL(repository);
+      if (url.hostname === "github.com") {
+        return `https://raw.githubusercontent.com${url.pathname}/main/${encodedPath}`;
+      }
+    } catch {
+      // Fall through to a generic repository URL shape.
+    }
+
+    return `${repository}/raw/main/${encodedPath}`;
+  }
+
+  function validateVaultArticleFrontMatter(items) {
+    const errors = [];
+    const requiredFields = ["title", "slug", "date", "status", "topics", "summary"];
+    const validStatuses = new Set(["published", "draft", "private"]);
+
+    for (const item of items) {
+      const data = item.data || {};
+      const path = sourcePath(item.inputPath);
+      const fields = frontMatterFields(item.inputPath);
+
+      for (const field of requiredFields) {
+        if (!fields.has(field)) {
+          errors.push(`${path}: missing required front matter field "${field}"`);
+        }
+      }
+
+      if (fields.has("title") && typeof data.title !== "string") {
+        errors.push(`${path}: "title" must be a string`);
+      }
+
+      if (fields.has("slug") && (typeof data.slug !== "string" || !data.slug.trim())) {
+        errors.push(`${path}: "slug" must be a non-empty string`);
+      }
+
+      if (fields.has("summary") && typeof data.summary !== "string") {
+        errors.push(`${path}: "summary" must be a string`);
+      }
+
+      if (fields.has("topics") && !Array.isArray(data.topics)) {
+        errors.push(`${path}: "topics" must be a list`);
+      }
+
+      if (fields.has("status")) {
+        const status = String(data.status || "").toLowerCase();
+        if (!validStatuses.has(status)) {
+          errors.push(`${path}: "status" must be one of published, draft, or private`);
+        }
+      }
+
+      if (fields.has("date") && Number.isNaN(new Date(data.date).getTime())) {
+        errors.push(`${path}: "date" must be a valid date`);
+      }
+    }
+
+    if (errors.length) {
+      throw new Error(`Content front matter validation failed:\n${errors.join("\n")}`);
+    }
   }
 
   function monthKey(item) {
@@ -107,23 +211,19 @@ module.exports = function (eleventyConfig) {
   }
 
   eleventyConfig.addCollection("vaultContent", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("content/**/*.md")
+    const items = vaultArticleItems(collectionApi);
+    validateVaultArticleFrontMatter(items);
+
+    return items
       .filter(isPublished)
-      .filter((item) => !item.inputPath.endsWith("/index.md"))
-      .filter((item) => !item.inputPath.endsWith("/months.md"))
-      .filter((item) => !item.inputPath.endsWith("/years.md"))
       .sort((a, b) => contentDate(b) - contentDate(a));
   });
 
   eleventyConfig.addCollection("vaultMonths", function (collectionApi) {
     const months = new Map();
 
-    collectionApi.getFilteredByGlob("content/**/*.md")
+    vaultArticleItems(collectionApi)
       .filter(isPublished)
-      .filter((item) => !item.inputPath.endsWith("/index.md"))
-      .filter((item) => !item.inputPath.endsWith("/months.md"))
-      .filter((item) => !item.inputPath.endsWith("/years.md"))
       .forEach((item) => {
         const key = monthKey(item);
         if (!key) {
@@ -156,11 +256,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("vaultYears", function (collectionApi) {
     const years = new Map();
 
-    collectionApi.getFilteredByGlob("content/**/*.md")
+    vaultArticleItems(collectionApi)
       .filter(isPublished)
-      .filter((item) => !item.inputPath.endsWith("/index.md"))
-      .filter((item) => !item.inputPath.endsWith("/months.md"))
-      .filter((item) => !item.inputPath.endsWith("/years.md"))
       .forEach((item) => {
         const key = monthKey(item);
         if (!key) {
@@ -210,8 +307,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("wordpressRedirects", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("content/**/*.md")
+    return vaultArticleItems(collectionApi)
       .filter(isPublished)
       .filter((item) => oldWordPressPath(item.data.original_url))
       .sort((a, b) => contentDate(b) - contentDate(a));
@@ -226,6 +322,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", function (value) {
     return new Date(value).toISOString();
+  });
+
+  eleventyConfig.addFilter("dateOnly", function (value) {
+    return new Date(value).toISOString().slice(0, 10);
   });
 
   eleventyConfig.addFilter("rssDate", function (value) {
@@ -257,14 +357,19 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("isVaultArticle", function (inputPath) {
-    const normalizedPath = String(inputPath || "").replace(/^\.\//, "");
-    return /^content\/\d{4}\/\d{2}\/[^/]+\.md$/.test(normalizedPath);
+    return isVaultArticlePath(inputPath);
+  });
+
+  eleventyConfig.addFilter("sourcePath", function (inputPath) {
+    return sourcePath(inputPath);
   });
 
   eleventyConfig.addFilter("sourceUrl", function (inputPath, repository) {
-    const normalizedPath = String(inputPath || "").replace(/^\.\//, "");
-    const encodedPath = normalizedPath.split("/").map(encodeURIComponent).join("/");
-    return `${repository}/blob/main/${encodedPath}`;
+    return repositorySourceUrl(inputPath, repository);
+  });
+
+  eleventyConfig.addFilter("rawSourceUrl", function (inputPath, repository) {
+    return repositoryRawSourceUrl(inputPath, repository);
   });
 
   eleventyConfig.addFilter("oldWordPressPath", oldWordPressPath);
