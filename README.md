@@ -21,6 +21,8 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 - `search-index.json.njk`, `feeds/vault.json.njk`, `feeds/rss.xml.njk`, `llms.txt.njk`, and `sitemap.xml.njk` generate machine-readable discovery files.
 - `404.md` controls the GitHub Pages not-found page.
 - `redirects.njk` generates static redirect pages for imported WordPress URLs using `original_url`.
+- `scripts/generate-provenance.mjs` writes post-build provenance files into `_site/`.
+- `scripts/validate-provenance.mjs` checks the generated provenance index, per-article documents, and rendered HTML hashes.
 
 ## Create Content
 
@@ -82,8 +84,67 @@ Generated public artefacts include:
 - `/feeds/rss.xml` for RSS readers.
 - `/llms.txt` for AI-oriented discovery.
 - `/sitemap.xml` for crawler discovery.
+- `/.well-known/provenance.json` for the site-level provenance index.
+- `/content/YYYY/MM/slug/provenance.jsonld` for per-article provenance documents.
 
 The generated JSON is not maintained by hand. Run `make build` or `npm run build` locally to validate content metadata and regenerate the public artefacts into `_site/`. The GitHub Pages workflow runs the same build on every push to `main`.
+
+## Provenance
+
+The build generates machine-readable provenance for every published dated article in `content/YYYY/MM/*.md`.
+
+The site-level index is published at:
+
+```text
+/.well-known/provenance.json
+```
+
+Each article gets a companion JSON-LD document beside the rendered page:
+
+```text
+/content/YYYY/MM/slug/provenance.jsonld
+```
+
+The provenance files include the article URL, title, source path, rendered HTML hash, created and modified timestamps, build metadata, and a future signing extension point. The hash uses SHA-256 over the rendered HTML in `_site/`, not the Markdown source, because the public page is what readers and crawlers actually receive.
+
+Timestamps use UTC ISO-8601. `date` front matter is used for creation. `updated` or `modified` front matter is used for modification when present; otherwise the generator falls back to Git history, then build time if Git metadata is unavailable.
+
+Signing is optional. Local builds without `PROVENANCE_SIGNING_PRIVATE_KEY_JWK` emit unsigned provenance with an explicit `signing.status` value. Builds with `PROVENANCE_SIGNING_PRIVATE_KEY_JWK` emit Ed25519 signatures and publish the matching public key at `/.well-known/provenance-key.jwk`.
+
+`PROVENANCE_SIGNING_PRIVATE_KEY_JWK` can contain either a full Ed25519 private JWK JSON object or a 32-byte hex Ed25519 seed. The latter is the output shape from:
+
+```sh
+openssl rand -hex 32
+```
+
+Signatures cover the RFC 8785-style canonical JSON payload with the top-level `signature` field omitted. Ed25519 signatures can be verified with a public JWK from `PROVENANCE_PUBLIC_KEY_JWK` or from the generated site file `/.well-known/provenance-key.jwk`.
+
+The expected signature shape is:
+
+```json
+{
+  "signature": {
+    "type": "DataIntegrityProof",
+    "algorithm": "Ed25519",
+    "canonicalization": "RFC8785",
+    "key_id": "provenance-ed25519-2026-05",
+    "created": "2026-05-12T00:00:00.000Z",
+    "value": "base64url-signature"
+  }
+}
+```
+
+Validate provenance locally after a build:
+
+```sh
+npm run validate:provenance
+```
+
+To require signatures during validation:
+
+```sh
+npm run validate:provenance:signatures
+```
 
 ## Images
 

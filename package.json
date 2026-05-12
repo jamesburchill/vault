@@ -6,10 +6,13 @@
   "scripts": {
     "prebuild": "node scripts/clean-site.mjs",
     "build": "eleventy",
+    "postbuild": "node scripts/generate-provenance.mjs",
     "import:wordpress": "node scripts/import-wordpress.mjs",
     "new": "node scripts/new-content.mjs",
     "prestart": "node scripts/clean-site.mjs",
-    "start": "eleventy --serve --port=8000"
+    "start": "eleventy --serve --port=8000",
+    "validate:provenance": "node scripts/validate-provenance.mjs",
+    "validate:provenance:signatures": "REQUIRE_PROVENANCE_SIGNATURES=true node scripts/validate-provenance.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",

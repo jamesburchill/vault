@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.ignores.add(".git/**");
   eleventyConfig.ignores.add(".github/**");
+  eleventyConfig.ignores.add("**/.DS_Store");
   eleventyConfig.ignores.add(".venv/**");
   eleventyConfig.ignores.add("_site/**");
   eleventyConfig.ignores.add("site/**");

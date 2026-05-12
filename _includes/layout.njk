@@ -14,6 +14,10 @@
     <link rel="icon" href="/assets/white-lion.png" type="image/png">
     <link rel="alternate" href="/feeds/rss.xml" type="application/rss+xml" title="{{ site.name }}">
     <link rel="alternate" href="/feeds/vault.json" type="application/feed+json" title="{{ site.name }}">
+    <link rel="describedby" type="application/ld+json" href="/.well-known/provenance.json">
+    {% if isArticle %}
+    <link rel="describedby" type="application/ld+json" href="./provenance.jsonld">
+    {% endif %}
     <meta property="og:type" content="{% if isArticle %}article{% else %}website{% endif %}">
     <meta property="og:title" content="{{ metaTitle }}">
     <meta property="og:description" content="{{ metaDescription }}">
@@ -75,7 +79,11 @@
       <article class="content">
         {{ content | safe }}
         {% if page.inputPath | isVaultArticle %}
-        <p class="source-link"><a href="{{ page.inputPath | sourceUrl(site.repository) }}">View source Markdown</a></p>
+        <p class="source-link">
+          <a href="{{ page.inputPath | sourceUrl(site.repository) }}">View source Markdown</a>
+          ·
+          <a href="./provenance.jsonld">Verified Provenance</a>
+        </p>
         {% endif %}
       </article>
     </main>
@@ -88,6 +96,7 @@
       <a href="/feeds/vault.json">JSON feed</a>
       <a href="/feeds/rss.xml">RSS</a>
       <a href="/sitemap.xml">Sitemap</a>
+      <a href="/.well-known/provenance.json">Provenance</a>
     </footer>
     <script>
       (() => {
