@@ -13,6 +13,7 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 ## Source Layout
 
 - `index.md` controls the public homepage.
+- `search.md` controls `/search/`, the client-side search page powered by `/search-index.json`.
 - `about.md` controls `/about/`.
 - `now.md` controls `/now/`.
 - `content/YYYY/MM/*.md` contains dated articles, notes, and source material.
@@ -79,6 +80,7 @@ Markdown files in `content/YYYY/MM/` are canonical. JSON, RSS, `llms.txt`, and s
 
 Generated public artefacts include:
 
+- `/search/` for in-site search over published article metadata.
 - `/search-index.json` for lightweight search, AI, and discovery metadata.
 - `/feeds/vault.json` for JSON Feed consumers.
 - `/feeds/rss.xml` for RSS readers.
