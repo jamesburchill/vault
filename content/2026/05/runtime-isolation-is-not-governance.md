@@ -220,6 +220,6 @@ Serious autonomous systems need both.
 * [OpenClaw documentation](https://github.com/openclaw/openclaw/blob/main/docs/index.md)
 * [OpenClaw vision and security notes](https://github.com/openclaw/openclaw/blob/main/VISION.md)
 * [NanoClaw site and FAQ](https://nanoclaws.io/)
-* [NanoClaw architecture specification](https://github.com/qwibitai/nanoclaw/blob/main/docs/SPEC.md)
+* [NanoClaw architecture specification](https://github.com/nanocoai/nanoclaw/blob/main/docs/SPEC.md)
 * [SafeAgent GitHub repository](https://github.com/jamesburchill/safeagent)
 * [VetoGuard GitHub repository](https://github.com/jamesburchill/vetoguard-ce)
