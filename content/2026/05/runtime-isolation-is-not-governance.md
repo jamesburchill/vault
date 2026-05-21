@@ -56,7 +56,7 @@ It is necessary because autonomous execution needs boundaries. A serious system 
 
 Containers, sandboxing, read-only mounts, non-root users, dropped capabilities, scoped credentials, network policy, and disposable workspaces all help.
 
-This is why NanoClaw's focus on container-isolated agent execution is directionally important. This is also why [SafeAgent](https://safeagent.ca) exists. SafeAgent is concerned with governed execution: one job, one constrained sandbox, explicit policy, approval gates for risky commands, and audit logs for inspection.
+This is why NanoClaw's focus on container-isolated agent execution is directionally important. This is also why [SafeAgent](https://github.com/jamesburchill/safeagent) exists. SafeAgent is concerned with governed execution: one job, one constrained sandbox, explicit policy, approval gates for risky commands, and audit logs for inspection.
 
 That kind of containment does not solve every security problem. It does not make untrusted autonomy safe. But it raises the baseline by making damage less likely, less broad, and more visible.
 
@@ -111,7 +111,7 @@ That layer needs several parts:
 * Auditability: a durable record of what happened, when, by whom, with which inputs and outputs.
 * Provenance: evidence about the origin, context, dependency chain, and reasoning path behind the action.
 
-This is where SafeAgent and [VetoGuard](https://vetoguard.com) sit.
+This is where SafeAgent and [VetoGuard](https://github.com/jamesburchill/vetoguard-ce) sit.
 
 They are not replacements for agent runtimes. They address a different layer.
 
@@ -221,5 +221,5 @@ Serious autonomous systems need both.
 * [OpenClaw vision and security notes](https://github.com/openclaw/openclaw/blob/main/VISION.md)
 * [NanoClaw site and FAQ](https://nanoclaws.io/)
 * [NanoClaw architecture specification](https://github.com/qwibitai/nanoclaw/blob/main/docs/SPEC.md)
-* [SafeAgent project home](https://safeagent.ca)
-* [VetoGuard project domain](https://vetoguard.com)
+* [SafeAgent GitHub repository](https://github.com/jamesburchill/safeagent)
+* [VetoGuard GitHub repository](https://github.com/jamesburchill/vetoguard-ce)
