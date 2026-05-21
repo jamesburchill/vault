@@ -22,7 +22,7 @@ canonical_url: ""
 
 Autonomous coding agents are moving from novelty to infrastructure.
 
-The interesting work is no longer just in model capability. It is in runtime capability. Projects such as [OpenClaw](https://github.com/openclaw/openclaw/blob/main/docs/index.md) and [NanoClaw](https://nanoclaws.io/) show that the agent runtime layer is maturing. Agents are being given shells, browsers, file access, persistent memory, scheduled tasks, messaging channels, provider integrations, and long-running execution environments.
+The interesting work is no longer just in model capability. It is in runtime capability. Projects such as [OpenClaw](https://github.com/openclaw/openclaw/blob/main/docs/index.md) and [NanoClaw](https://github.com/nanocoai/nanoclaw) show that the agent runtime layer is maturing. Agents are being given shells, browsers, file access, persistent memory, scheduled tasks, messaging channels, provider integrations, and long-running execution environments.
 
 That is a meaningful step.
 
@@ -219,7 +219,7 @@ Serious autonomous systems need both.
 
 * [OpenClaw documentation](https://github.com/openclaw/openclaw/blob/main/docs/index.md)
 * [OpenClaw vision and security notes](https://github.com/openclaw/openclaw/blob/main/VISION.md)
-* [NanoClaw site and FAQ](https://nanoclaws.io/)
+* [NanoClaw GitHub repository](https://github.com/nanocoai/nanoclaw)
 * [NanoClaw architecture specification](https://github.com/nanocoai/nanoclaw/blob/main/docs/SPEC.md)
 * [SafeAgent GitHub repository](https://github.com/jamesburchill/safeagent)
 * [VetoGuard GitHub repository](https://github.com/jamesburchill/vetoguard-ce)
