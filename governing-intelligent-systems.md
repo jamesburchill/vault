@@ -24,11 +24,11 @@ Intelligent systems need more than execution environments. They need operational
 - accountability
 - practical governance that supports progress
 
-The reason is simple: [because drift happens](/because-drift-happens/).
+The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com/).
 
 ## Start Here
 
-- [Because Drift Happens](/because-drift-happens/)  
+- [Because Drift Happens™](https://becausedrifthappens.com/)  
   The core thesis behind this work.
 
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)  

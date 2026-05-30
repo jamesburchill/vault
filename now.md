@@ -9,7 +9,7 @@ permalink: /now/
 Current public focus:
 
 - Governing Intelligent Systems
-- Because Drift Happens
+- [Because Drift Happens™](https://becausedrifthappens.com/)
 - operational coherence
 - AI system drift
 - provenance and source-of-truth publishing

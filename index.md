@@ -16,7 +16,7 @@ This is the public field-notes layer behind my work on systems that must stay co
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="/governing-intelligent-systems/">Start here</a>
-  <a class="md-button" href="/because-drift-happens/">Because Drift Happens</a>
+  <a class="md-button" href="https://becausedrifthappens.com/">Because Drift Happens™</a>
   <a class="md-button" href="/content/">Browse all content</a>
 </p>
 
@@ -25,7 +25,7 @@ This is the public field-notes layer behind my work on systems that must stay co
 - [Governing Intelligent Systems](/governing-intelligent-systems/)  
   The category I am building around: how intelligent systems stay coherent, accountable, and governable under change.
 
-- [Because Drift Happens](/because-drift-happens/)  
+- [Because Drift Happens™](https://becausedrifthappens.com/)  
   The core thesis: drift is the default condition of all systems.
 
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)  

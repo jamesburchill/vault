@@ -1,10 +1,12 @@
 ---
-title: Because Drift Happens
+title: Because Drift Happens™
 description: The core thesis behind James Burchill's work on governing intelligent systems.
 permalink: /because-drift-happens/
 ---
 
-# Because Drift Happens
+# Because Drift Happens™
+
+The canonical doctrine site is [becausedrifthappens.com](https://becausedrifthappens.com/).
 
 Drift is the default condition of all systems.
 
@@ -40,6 +42,7 @@ Without those things, the system may still run. It may even look productive. But
 
 ## Related Field Notes
 
+- [Because Drift Happens™ doctrine site](https://becausedrifthappens.com/)
 - [Governing Intelligent Systems](/governing-intelligent-systems/)
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)

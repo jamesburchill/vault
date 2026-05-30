@@ -33,7 +33,7 @@ Category:
 
 Core thesis:
 
-> Because drift happens.
+> [Because Drift Happens™](https://becausedrifthappens.com/)
 
 Drift is the default condition of all systems. The work is understanding how intelligent systems drift, where coherence breaks, and what governance needs to exist before autonomy creates avoidable operational risk.
 
