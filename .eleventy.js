@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("layout", "layout.njk");
   eleventyConfig.addGlobalData("site", {
     name: "The Vault - James Burchill",
-    description: "A Markdown-first public vault for durable writing, notes, references, and source material.",
+    description: "Field notes from James Burchill on governing intelligent systems, operational coherence, AI drift, provenance, and control surfaces.",
     url: "https://vault.jamesburchill.com",
     repository: "https://github.com/jamesburchill/vault",
     copyrightYear: new Date().getFullYear(),

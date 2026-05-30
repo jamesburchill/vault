@@ -2,10 +2,14 @@
 title: "Agent Readiness Is a Design Discipline"
 date: 2026-01-16
 slug: agent-readiness-is-a-design-discipline
-summary: "Agent readiness is not an AI feature. It is a structural property of a system. A system is agent ready when non-human actors can act through it safely, predictably, and without interpretation. If a human must infer intent, guess behaviour, or recover from ambiguity, the system is not agent ready. The Core Rule Agents require"
+summary: "Agent readiness is a structural property of a system, not an AI feature."
 topics:
   - strategy
   - mcp
+  - governing-intelligent-systems
+  - autonomous-agents
+  - system-readiness
+  - control-surfaces
 status: published
 original_url: "https://vault.jamesburchill.com/strategy/agent-readiness-is-a-design-discipline/"
 wordpress_id: 992

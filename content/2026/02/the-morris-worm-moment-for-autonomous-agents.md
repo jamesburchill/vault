@@ -2,9 +2,13 @@
 title: "The Morris Worm Moment for Autonomous Agents"
 date: 2026-02-05
 slug: the-morris-worm-moment-for-autonomous-agents
-summary: "Why mature systems design always arrives just after the first preventable incident. On the evening of November 2, 1988, a graduate student released a small program onto the early internet. It was not intended to be destructive. It was not designed as a weapon. It was, by most credible accounts, an experiment. Within hours, machines"
+summary: "Why mature systems design often arrives just after the first preventable incident."
 topics:
   - strategy
+  - governing-intelligent-systems
+  - autonomous-agents
+  - ai-governance
+  - drift
 status: published
 original_url: "https://vault.jamesburchill.com/strategy/the-morris-worm-moment-for-autonomous-agents/"
 wordpress_id: 995

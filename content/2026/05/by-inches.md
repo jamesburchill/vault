@@ -2,9 +2,12 @@
 title: "By Inches"
 date: 2026-05-03
 slug: by-inches
-summary: "I didn’t have a name for it then. I just knew something was off. Not in the obvious way – there was no singular moment, no clean break, nothing you could isolate and point to as the problem. Things didn’t fail loudly. They shifted. Quietly, incrementally, almost politely. A rule bent just this once. A"
+summary: "A practical reflection on how systems drift through small, repeated deviations before the cost becomes visible."
 topics:
   - strategy
+  - because-drift-happens
+  - drift
+  - operational-coherence
 status: published
 original_url: "https://vault.jamesburchill.com/strategy/by-inches/"
 wordpress_id: 1026

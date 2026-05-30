@@ -10,6 +10,9 @@ topics:
   - vetoguard
   - systems-integrity
   - because-drift-happens
+  - governing-intelligent-systems
+  - control-surfaces
+  - provenance
 status: published
 original_url: ""
 featured_image: "/assets/2026/05/runtime-isolation-is-not-governance.png"

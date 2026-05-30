@@ -2,9 +2,12 @@
 title: "The Era When Building Software Stops Being the Hard Part: The Likely Shape of the Next 5 to 7 Years"
 date: 2026-02-06
 slug: when-building-isnt-the-hard-part
-summary: "For most of software history, the defining question was simple: Can we build it? That question shaped everything – team structures, hiring models, funding strategies, even professional identity. Software creation was expensive, slow, and coordination-heavy. Organizations assembled pyramids of talent because they had to. Junior developers produced volume. Senior engineers imposed structure. Architects guided the"
+summary: "As AI lowers the cost of software creation, the harder work shifts toward judgement, governance, and operational coherence."
 topics:
   - strategy
+  - governing-intelligent-systems
+  - operational-coherence
+  - system-readiness
 status: published
 original_url: "https://vault.jamesburchill.com/strategy/when-building-isnt-the-hard-part/"
 wordpress_id: 998

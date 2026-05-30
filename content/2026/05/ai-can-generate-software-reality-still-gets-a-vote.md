@@ -7,6 +7,9 @@ topics:
   - ai
   - software
   - systems
+  - governing-intelligent-systems
+  - operational-coherence
+  - system-readiness
 status: published
 original_url: ""
 featured_image: "/assets/2026/05/ai-can-generate-software-reality-still-gets-a-vote.png"

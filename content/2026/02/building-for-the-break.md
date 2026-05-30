@@ -2,9 +2,13 @@
 title: "Building for the Break: Why many of today’s public MCP servers are an accident waiting to happen"
 date: 2026-02-07
 slug: building-for-the-break
-summary: "Every technology wave produces its share of impressive demos. We are now seeing that pattern repeat with Model Context Protocol (MCP) servers. Public MCP endpoints are appearing everywhere. Companies are rushing to expose tools, wire up APIs, and signal that they are ready for an agent-driven future. On the surface, this looks like progress. Underneath,"
+summary: "Why public MCP servers and agent-facing tools need governance before the first preventable failure."
 topics:
   - strategy
+  - governing-intelligent-systems
+  - autonomous-agents
+  - ai-governance
+  - mcp
 status: published
 original_url: "https://vault.jamesburchill.com/strategy/building-for-the-break/"
 wordpress_id: 1002
