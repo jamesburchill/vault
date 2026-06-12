@@ -2,7 +2,7 @@
 
 ## Working Principles
 
-- Always use Canadian English spelling: `colour`, `behaviour`, `organise`, `artefact`, and similar forms.
+- Always use Canadian English spelling. Use Canadian/Oxford `-ize` forms such as `organize`, `organization`, `summarize`, and `operationalize`; keep Canadian forms such as `colour`, `behaviour`, `centre`, and `artefact`.
 - Treat Markdown as the canonical source of record. Generated HTML is only a public rendering of the Markdown.
 - This repo is a public vault, not a CMS clone. Prefer simple, durable files, explicit metadata, stable URLs, and machine-readable structure over platform-specific convenience.
 - Assume the repo is being shaped for both human readers and AI/search systems. Keep content easy to parse, cite, summarize, archive, and migrate.
@@ -102,4 +102,3 @@ make build
 - `npm run build` is also acceptable and runs the same Eleventy build path.
 - For helper-script changes, test the script path directly or through the Makefile target it supports.
 - Before reporting completion, check `git status --short` and mention unrelated pre-existing changes if present.
-
