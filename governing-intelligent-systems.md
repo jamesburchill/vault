@@ -32,7 +32,10 @@ The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com
   The core thesis behind this work.
 
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)  
-  AI agent runtimes solve the execution problem, but serious autonomous systems also need governance, authorisation, escalation, and provenance.
+  AI agent runtimes solve the execution problem, but serious autonomous systems also need governance, authorization, escalation, and provenance.
+
+- [Local-First AI: Put the Control Plane Back Inside the Business](/content/2026/06/local-first-ai-control-plane/)  
+  Local-first AI is not a rejection of cloud models; it is a way to keep routing, policy, budget, escalation, and audit under business control.
 
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
