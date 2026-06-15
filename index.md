@@ -31,6 +31,9 @@ This is the public field-notes layer behind my work on systems that must stay co
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)  
   AI agent runtimes solve the execution problem, but serious autonomous systems also need governance, authorisation, escalation, and provenance.
 
+- [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)  
+  Token accounting turns AI usage into an observability signal for machine cognition, cost, escalation, and drift.
+
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
 

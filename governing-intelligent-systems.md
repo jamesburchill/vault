@@ -37,6 +37,9 @@ The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com
 - [Local-First AI: Put the Control Plane Back Inside the Business](/content/2026/06/local-first-ai-control-plane/)  
   Local-first AI is not a rejection of cloud models; it is a way to keep routing, policy, budget, escalation, and audit under business control.
 
+- [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)  
+  Token accounting shows where machine cognition is being consumed, why it is being consumed, and when usage patterns may indicate drift.
+
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
 
