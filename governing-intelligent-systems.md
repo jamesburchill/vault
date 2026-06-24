@@ -40,6 +40,9 @@ The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com
 - [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)  
   Token accounting shows where machine cognition is being consumed, why it is being consumed, and when usage patterns may indicate drift.
 
+- [Semantic Indexing's Dirty Little Secret: Entropy](/content/2026/06/semantic-indexing-entropy/)  
+  Semantic indexes preserve access better than understanding unless they track provenance, review, contradiction, and rebuild history.
+
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
 

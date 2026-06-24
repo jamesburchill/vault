@@ -47,6 +47,7 @@ Without those things, the system may still run. It may even look productive. But
 - [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)
 - [Local-First AI: Put the Control Plane Back Inside the Business](/content/2026/06/local-first-ai-control-plane/)
 - [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)
+- [Semantic Indexing's Dirty Little Secret: Entropy](/content/2026/06/semantic-indexing-entropy/)
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)
 - [By Inches](/content/2026/05/by-inches/)
 - [Drift is the default condition. Coherence is the achievement.](/content/2026/05/drift-is-the-default-free-download/)
