@@ -43,6 +43,9 @@ The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com
 - [Semantic Indexing's Dirty Little Secret: Entropy](/content/2026/06/semantic-indexing-entropy/)  
   Semantic indexes preserve access better than understanding unless they track provenance, review, contradiction, and rebuild history.
 
+- [Semantic Objects Come Before Semantic Indexes](/content/2026/06/semantic-objects-come-before-semantic-indexes/)
+  Semantic objects show why meaning, metadata, provenance, and classification have to be designed before a Business Index can stay governable.
+
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
 

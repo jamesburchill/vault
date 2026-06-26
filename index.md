@@ -37,6 +37,9 @@ This is the public field-notes layer behind my work on systems that must stay co
 - [Semantic Indexing's Dirty Little Secret: Entropy](/content/2026/06/semantic-indexing-entropy/)  
   Semantic indexing entropy explains why retrieval alone cannot preserve organizational meaning when language, policy, ownership, and evidence drift.
 
+- [Semantic Objects Come Before Semantic Indexes](/content/2026/06/semantic-objects-come-before-semantic-indexes/)
+  Semantic objects explain how meaning, metadata, provenance, and classification shape a Business Index before embeddings or retrieval can help.
+
 - [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
   AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
 
