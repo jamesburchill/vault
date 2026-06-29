@@ -261,17 +261,3 @@ I want Gander to succeed. I respect the mission, I admire the team, and I believ
 At the same time, the realities remain: network constraints, user behaviour, market dynamics, and limited liquidity paths shape the trajectory of any social platform. Ignoring those forces doesn’t help anyone.
 
 The most constructive support I can offer is clear, honest analysis, and I’d be delighted to be proven wrong in time. Supporting a mission doesn’t always mean backing the business model, and strong ecosystems are built on both enthusiasm and thoughtful critique.
-
-StayFrosty!
-
-~ James
-
-* * *
-
-### **Call to Action**
-
-Gander’s mission matters, and so does the broader conversation about digital sovereignty in Canada. If we want better tech at home, we need to talk honestly about what works, what doesn’t, and why.
-
-What do you think real success looks like for a Canadian social platform? Can mission-driven ambition overcome the limits of network theory?
-
-Share your thoughts in the comments.
