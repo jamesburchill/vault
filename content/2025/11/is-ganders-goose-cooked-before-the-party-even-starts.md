@@ -25,6 +25,8 @@ featured_image: "/assets/2025/11/is-ganders-goose-cooked-before-the-party-even-s
 
 **Context Statement**: Before diving in, know that I’m not anti-Gander. I respect the mission, the founders, and the Canadians who’ve invested their money and belief into a homegrown platform. _I want it to succeed_. But ignoring the limits of network theory doesn’t help anyone – not the team building it, not the investors backing it, and not the people cheering from the sidelines. Someone has to say the quiet part out loud, and I’m saying it here from a place of respect and realism, not hostility. I’m rooting for Gander. 
 
+**Update, June 29, 2026:** Gander has announced its official national launch for Canada Day, July 1, 2026. The platform reports more than 18,000 members and 2,517 Canadian investors ahead of launch. That early traction is meaningful, but it does not yet resolve the network-effect question at the centre of this article: whether a sovereignty-first Canadian social platform can turn launch enthusiasm into durable, everyday use.
+
 * * *
 
 I want to believe Gander will succeed. I like the mission, I respect the intent, and I appreciate the idea of a Canadian-built, Canadian-hosted social platform focused on privacy and sovereignty. It’s refreshing. It’s ambitious. And it’s aimed at a real problem in today’s tech landscape.
