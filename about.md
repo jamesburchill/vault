@@ -16,7 +16,7 @@ The current centre of gravity is drift, operational coherence, control surfaces,
 
 - Dated writing lives under `content/YYYY/MM/`.
 - Images and supporting files live under `assets/`.
-- Stable pages such as About and Now live at the top level.
+- Stable pages such as About live at the top level.
 - The content is published as a static website with archive pages, feeds, and machine-readable discovery files.
 
 ## Why This Exists

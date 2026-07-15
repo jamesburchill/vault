@@ -15,7 +15,6 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 - `index.md` controls the public homepage.
 - `search.md` controls `/search/`, the client-side search page powered by `/search-index.json`.
 - `about.md` controls `/about/`.
-- `now.md` controls `/now/`.
 - `content/YYYY/MM/*.md` contains dated articles, notes, and source material.
 - `assets/YYYY/MM/` contains images and supporting files for dated content.
 - `assets/` contains shared site assets such as logos and icons.
