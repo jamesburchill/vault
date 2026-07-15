@@ -25,7 +25,7 @@ featured_image: "/assets/2025/11/is-ganders-goose-cooked-before-the-party-even-s
 
 **Context Statement**: Before diving in, know that I’m not anti-Gander. I respect the mission, the founders, and the Canadians who’ve invested their money and belief into a homegrown platform. _I want it to succeed_. But ignoring the limits of network theory doesn’t help anyone – not the team building it, not the investors backing it, and not the people cheering from the sidelines. Someone has to say the quiet part out loud, and I’m saying it here from a place of respect and realism, not hostility. I’m rooting for Gander. 
 
-> **Dated thesis — reviewed July 15, 2026:** This is analysis, not an investment recommendation or a factual prediction of failure. Gander's June 29 announcement reported more than 18,000 members, 2,517 Canadian investors, and a July 1 national launch. Those are company-reported figures. The network-effect thesis should be judged later using active use, retention, revenue, and liquidity—not the confidence of this article.
+> **Dated thesis — reviewed July 15, 2026:** This is analysis, not an investment recommendation or a factual prediction of failure. Gander's June 29 announcement reported more than 18,000 members, 2,517 Canadian investors, and a July 1 national launch. Those are company-reported figures; the network-effect thesis should be assessed over time using active use, retention, revenue, and liquidity.
 
 Source: [Gander's June 29, 2026 launch announcement](https://www.newswire.ca/news-releases/gander-launches-on-canada-day-offering-canadians-an-alternative-to-foreign-owned-social-media-890555770.html).
 

@@ -17,7 +17,7 @@ featured_image: "/assets/2024/11/ai-inbreeding-a-growing-concern-and-a-path-to-d
 
 ![Model collapse and recursive synthetic training data](/assets/2024/11/ai-inbreeding-a-growing-concern-and-a-path-to-detecting-ai-created-content-ai-inbreeding.jpg)
 
-> **Corrected July 15, 2026:** I originally called this problem “AI inbreeding” and suggested that stylistic clues could reliably identify AI-written text. The established research term is **model collapse**, and writing style alone is not dependable proof of authorship.
+> **Reviewed July 15, 2026:** This article uses the established term **model collapse** and treats stylistic clues as indicators rather than proof of authorship.
 
 Generative models can degrade when each new generation is trained indiscriminately on outputs from earlier generations. Research published in *Nature* describes this as model collapse: the learned distribution loses information about the original data, including uncommon but important patterns.
 

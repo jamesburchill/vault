@@ -17,7 +17,7 @@ featured_image: "/assets/2025/04/why-tariffs-still-get-love-in-america-even-thou
 
 ![Why Tariffs Still Get Love in America (Even Though They Hurt Americans)](/assets/2025/04/why-tariffs-still-get-love-in-america-even-though-they-hurt-americans-8af08eee-a63c-48e0-a2a2-338c858bf470.png)
 
-> **Dated commentary — reviewed July 15, 2026:** This article is an argument about the political appeal and domestic cost of tariffs, not a universal claim that every tariff has the same incidence or purpose. Evidence from the U.S. International Trade Commission found that U.S. importers bore nearly the full cost of the Section 232 and 301 tariffs it studied, while some protected domestic production also increased.
+> **Dated commentary — reviewed July 15, 2026:** This article examines the political appeal and domestic cost of tariffs. Evidence from the U.S. International Trade Commission found that U.S. importers bore nearly the full cost of the Section 232 and 301 tariffs it studied, while some protected domestic production also increased.
 
 
 Let’s talk about tariffs.

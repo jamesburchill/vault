@@ -17,7 +17,7 @@ featured_image: "/assets/2025/05/the-evolution-of-search-from-keywords-to-contex
 
 ![Writing for search and AI systems](/assets/2025/05/the-evolution-of-search-from-keywords-to-context-and-the-rise-of-aiso-aiso.jpg)
 
-> **Corrected July 15, 2026:** I originally presented “AISO” as a settled successor to SEO and made confident claims about what AI systems favour or ignore. The terminology and systems are not settled, and no checklist guarantees citation or visibility.
+> **Reviewed July 15, 2026:** This article reflects that AI-search terminology and ranking systems remain unsettled; no checklist guarantees citation or visibility.
 
 Search is no longer only a page of blue links. People also ask questions through assistants, summaries, browsers, and tools that retrieve information from multiple sources.
 

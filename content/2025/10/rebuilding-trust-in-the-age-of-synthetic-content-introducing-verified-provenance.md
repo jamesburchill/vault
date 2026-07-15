@@ -19,7 +19,7 @@ featured_image: "/assets/2025/10/rebuilding-trust-in-the-age-of-synthetic-conten
 
 ![Verified Provenance](/assets/2025/10/rebuilding-trust-in-the-age-of-synthetic-content-introducing-verified-provenance-verifiedprovenance.png)
 
-> **Correction and scope note — July 15, 2026:** This article originally overstated what cryptographic provenance proves. A signature shows that a particular key signed a record; a hash supports integrity checking; and a trusted timestamp can show that a fingerprint existed no later than a particular time. These mechanisms do **not**, by themselves, prove human authorship, originality, ownership, identity, or truth. Those conclusions depend on the surrounding identity, evidence, and trust model. The Vault's current implementation and its limits are described in [Verified Provenance for The Vault](/content/2026/05/verified-provenance-for-the-vault/).
+> **Scope note — July 15, 2026:** Cryptographic provenance provides inspectable evidence about signatures, integrity, and time. It does **not**, by itself, establish human authorship, originality, ownership, identity, or truth; those conclusions depend on the surrounding identity, evidence, and trust model. The Vault's current implementation and its limits are described in [Verified Provenance for The Vault](/content/2026/05/verified-provenance-for-the-vault/).
 
 
 The internet we grew up with was built on a simple idea: that content online was created by _people_ — individuals, teams, authors, journalists, creators. It wasn’t always accurate, but there was an implicit assumption that behind every article, post, image, and video was a human being who had something to say.

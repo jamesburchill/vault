@@ -20,7 +20,7 @@ featured_image: "/assets/2024/10/why-the-90-minute-focus-cycle-beats-the-pomodor
 
 ![Testing longer focus blocks against Pomodoro](/assets/2024/10/why-the-90-minute-focus-cycle-beats-the-pomodoro-technique-for-deep-work-90-minutes.jpeg)
 
-> **Corrected July 15, 2026:** I originally presented 90-minute focus blocks as a neuroscience-backed method that beats Pomodoro. The evidence does not justify that universal claim. This is better treated as a working experiment.
+> **Reviewed July 15, 2026:** This article now treats 90-minute focus blocks as a practical working experiment rather than a universal rule.
 
 The Pomodoro Technique is simple: work for 25 minutes, take a short break, and repeat. That can help when a task feels difficult to start, when energy is low, or when the work naturally divides into small units.
 

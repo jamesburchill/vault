@@ -19,7 +19,7 @@ featured_image: "/assets/2025/10/how-solopreneurs-can-use-n8n-to-automate-the-gr
 
 ![Using n8n with operational safeguards](/assets/2025/10/how-solopreneurs-can-use-n8n-to-automate-the-grind-and-take-back-their-time-n8n.png)
 
-> **Corrected July 15, 2026:** The original version called n8n open source and implied that self-hosting automatically keeps client data and credentials away from third parties. n8n describes itself as fair-code/source-available under its Sustainable Use License, not OSI open source. Self-hosting controls the orchestration host; connected services still receive whatever data a workflow sends them.
+> **Reviewed July 15, 2026:** This article reflects n8n's fair-code/source-available licensing and clarifies the data boundaries of self-hosted workflows.
 
 Automation can quietly reclaim hours from a small business. It can also turn one forgotten workflow into duplicate invoices, exposed credentials, silent data loss, or a customer email loop.
 

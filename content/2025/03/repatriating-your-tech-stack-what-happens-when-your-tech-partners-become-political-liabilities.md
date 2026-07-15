@@ -18,7 +18,7 @@ featured_image: "/assets/2025/03/repatriating-your-tech-stack-what-happens-when-
 
 ![A resilient technology stack across vendors and jurisdictions](/assets/2025/03/repatriating-your-tech-stack-what-happens-when-your-tech-partners-become-political-liabilities-7a2fa96a-d89a-4628-8997-604fac9a616d.png)
 
-> **Reframed July 15, 2026:** The original article used “repatriation,” “offshore,” and “hostile regions” too casually. Nationality is not a reliable proxy for technical trust. The useful question is whether a specific service, contract, jurisdiction, and operating model creates risk you can understand and exit.
+> **Context note — July 15, 2026:** This article evaluates technology risk through specific services, contracts, jurisdictions, and operating models—not nationality alone. The practical question is whether a dependency creates risks you can understand and exit.
 
 Geopolitics can change whether a vendor is available, lawful, supportable, or commercially sensible. So can an acquisition, price increase, outage, licence change, insolvency, or product shutdown.
 

@@ -17,7 +17,7 @@ featured_image: "/assets/2025/01/the-truth-about-qr-codes-and-scaremongering-wha
 
 ![A practical view of QR code security](/assets/2025/01/the-truth-about-qr-codes-and-scaremongering-what-you-need-to-know-qr-code-truth.webp)
 
-> **Corrected July 15, 2026:** The original version used absolutes about what scanning a QR code can or cannot do. The safer distinction is between the code, the action a device takes after decoding it, and any vulnerabilities in the software handling that action.
+> **Reviewed July 15, 2026:** This article distinguishes the QR code itself from the action a device takes after decoding it and from vulnerabilities in the software handling that action.
 
 A QR code is a compact way to encode data. It can contain a web address, payment destination, contact record, application link, Wi-Fi configuration, or plain text. That makes the code itself neither safe nor malicious.
 

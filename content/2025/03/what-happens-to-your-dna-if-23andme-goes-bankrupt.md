@@ -17,7 +17,7 @@ featured_image: "/assets/2025/03/what-happens-to-your-dna-if-23andme-goes-bankru
 ![What Happens to Your DNA if 23andMe Goes Bankrupt?](/assets/2025/03/what-happens-to-your-dna-if-23andme-goes-bankrupt-dna-secure.jpg)
 
 
-> **Updated July 15, 2026:** The original article was written before the bankruptcy outcome was known. This version separates what happened from what was only a plausible risk at the time.
+> **Updated July 15, 2026:** This article now reflects the bankruptcy outcome and distinguishes confirmed events from the risks discussed beforehand.
 
 In March 2025, 23andMe entered Chapter 11 protection. That turned an abstract privacy question into a real test: what happens when a consumer-genetics company changes hands?
 
