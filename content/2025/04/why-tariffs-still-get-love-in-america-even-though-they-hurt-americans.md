@@ -2,7 +2,7 @@
 title: "Why Tariffs Still Get Love in America (Even Though They Hurt Americans)"
 date: 2025-04-03
 slug: why-tariffs-still-get-love-in-america-even-though-they-hurt-americans
-summary: "Let’s talk about tariffs. Specifically, why some Americans—especially policymakers—keep reaching for this economic tool, even though it often works against their own citizens. It’s not about pointing fingers or calling anyone out. This is about understanding how something that looks like a solution can actually become a problem, and why it keeps happening anyway. First,"
+summary: "Dated commentary on why tariffs remain politically attractive, how their costs can reach domestic importers and consumers, and when strategic goals may justify those costs."
 topics:
   - mindset
   - lifehacks
@@ -17,6 +17,8 @@ featured_image: "/assets/2025/04/why-tariffs-still-get-love-in-america-even-thou
 
 ![Why Tariffs Still Get Love in America (Even Though They Hurt Americans)](/assets/2025/04/why-tariffs-still-get-love-in-america-even-though-they-hurt-americans-8af08eee-a63c-48e0-a2a2-338c858bf470.png)
 
+> **Dated commentary — reviewed July 15, 2026:** This article is an argument about the political appeal and domestic cost of tariffs, not a universal claim that every tariff has the same incidence or purpose. Evidence from the U.S. International Trade Commission found that U.S. importers bore nearly the full cost of the Section 232 and 301 tariffs it studied, while some protected domestic production also increased.
+
 
 Let’s talk about tariffs.
 
@@ -28,11 +30,11 @@ A tariff is a tax on imported goods. That means when a foreign product comes int
 
 It sounds like a patriotic move. Support local businesses, reduce dependency, protect jobs.
 
-But here’s the catch: **consumers pay the price**. Literally.
+But here’s the catch: **domestic importers, businesses, and consumers can pay much of the price.**
 
-Tariffs don’t punish foreign producers.
+The cost is not guaranteed to fall mainly on foreign producers. Exchange rates, margins, supply changes, retaliation, and market power can distribute the burden differently.
 
-They raise the sticker price for everyone in the country applying the tariff.
+Tariffs can raise domestic prices for the affected goods and downstream products.
 
 You, me, everyone at the store.
 
@@ -72,7 +74,7 @@ But the global economy isn’t a zero-sum game.
 
 Trade deficits aren’t necessarily bad. The US runs a deficit in part because it has a strong currency and high demand. It consumes a lot, and that fuels growth abroad. But a deficit doesn’t mean you’re being taken advantage of. It means you’re participating in global trade at scale.
 
-Tariffs don’t fix a trade deficit. They just shift the pain—and usually in the direction of domestic consumers and businesses.
+Tariffs are not a reliable standalone fix for a trade deficit. They can redirect trade and change prices without addressing the larger forces behind national saving, investment, currency demand, and consumption.
 
 ### **5\. Because Tariffs Are Tools (and Sometimes Blunt Ones Work)**
 
@@ -98,6 +100,8 @@ Tariffs aren’t evil. They’re not dumb. They’re tools—and like any tool, 
 
 But when the focus is on short-term optics rather than long-term outcomes, the average consumer ends up footing the bill.
 
-It’s worth remembering: every time you hear someone say a tariff will “punish” a foreign country, what they’re really saying is: **we’re going to tax ourselves to make a point.**
+It’s worth remembering: every time you hear someone say a tariff will “punish” a foreign country, ask who actually remits the tax, who can change prices or suppliers, who receives protection, and who absorbs the cost.
 
 And sometimes, that point comes with a pretty steep price tag.
+
+Source: [U.S. International Trade Commission findings on the economic effects of Section 232 and 301 tariffs](https://www.usitc.gov/press_room/news_release/2023/er0315_63679.htm).

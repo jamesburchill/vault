@@ -1,8 +1,8 @@
 ---
-title: "How a Bad Blood Draw Nearly Got Me Medicated"
+title: "How a Repeat Blood Draw Changed the Potassium Conversation"
 date: 2025-04-22
 slug: how-a-bad-blood-draw-nearly-got-me-medicated
-summary: "There’s a saying I used to brush off: “It’s not just what you measure, it’s how you measure it.” Turns out, when it comes to bloodwork–especially potassium levels–that phrase can save you from unnecessary medication and a truckload of stress. Let me explain. The Pattern That Didn’t Make Sense For years, my potassium levels were"
+summary: "A personal experience with elevated potassium results, collection technique, pseudohyperkalemia, and why an unexpected result needs clinical context rather than casual acceptance or dismissal."
 topics:
   - general
 status: published
@@ -12,14 +12,16 @@ featured_image: "/assets/2025/04/how-a-bad-blood-draw-nearly-got-me-medicated-po
 
 ---
 
-# How a Bad Blood Draw Nearly Got Me Medicated
+# How a Repeat Blood Draw Changed the Potassium Conversation
 
-![How a Bad Blood Draw Nearly Got Me Medicated](/assets/2025/04/how-a-bad-blood-draw-nearly-got-me-medicated-potassium-tests.png)
+![Comparing potassium results after different blood-collection conditions](/assets/2025/04/how-a-bad-blood-draw-nearly-got-me-medicated-potassium-tests.png)
+
+> **Medical scope note — July 15, 2026:** This is a personal experience, not medical advice. A high potassium result can be real and urgent. Do not delay treatment or change medication because of this article; ask a qualified clinician how the result, symptoms, ECG findings, kidney function, sample quality, and any repeat testing should be interpreted together.
 
 
 There’s a saying I used to brush off: “It’s not just what you measure, it’s how you measure it.”
 
-Turns out, when it comes to bloodwork–especially potassium levels–that phrase can save you from unnecessary medication and a truckload of stress.
+Turns out, when it comes to bloodwork—especially potassium levels—that phrase can change how a result is investigated.
 
 Let me explain.
 
@@ -64,18 +66,20 @@ Any of these factors can lead to a misleadingly high potassium reading.
 
 ## **Why This Matters (To You)**
 
-If I hadn’t pushed for one more test–done properly–I would’ve been medicated for a condition I didn’t actually have. Worse, lowering potassium _artificially_ when it’s already normal can cause its own set of serious problems, including muscle weakness, irregular heart rhythms, and more.
+The normal repeat result gave my clinician an important new piece of evidence and made collection technique worth investigating. It did **not**, by itself, prove that every earlier result was false. True hyperkalemia can be dangerous, and the safe response depends on the complete clinical picture.
 
 ## **The Takeaway: It’s Not Just the Numbers**
 
-Lab values are tools, not gospel. You need context. You need consistency. And sometimes, you need to challenge the assumption that the number is telling the full story.
+Lab values are tools that need clinical context. When a result is unexpected, it is reasonable to ask how the sample was collected and whether confirmation is appropriate—without assuming the result is wrong.
 
 So if your lab results ever show something off, ask:
 
 *   **How was the sample taken?**
 *   **Could collection technique have impacted the results?**
-*   **Can we retest with different protocols?**
+*   **Would confirmation or a different collection protocol be appropriate in my case?**
 
-Because as this experience proved: It wasn’t me that changed. It was how the test was done.
+In my case, collection and handling became a plausible explanation that my clinician could evaluate. That is a better conclusion than either blindly accepting or casually dismissing the number.
+
+Clinical background: [Errors in Potassium Measurement: A Laboratory Perspective for the Clinician](https://pmc.ncbi.nlm.nih.gov/articles/PMC3662091/).
 
 #StayFrosty!

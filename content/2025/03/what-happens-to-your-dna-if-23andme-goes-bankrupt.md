@@ -1,8 +1,8 @@
 ---
-title: "What Happens to Your DNA if 23andMe Goes Bankrupt?"
+title: "What Happened to Your DNA When 23andMe Entered Bankruptcy?"
 date: 2025-03-24
 slug: what-happens-to-your-dna-if-23andme-goes-bankrupt
-summary: "We live in a world where curiosity sells. Want to know your ancestry? Curious if you’re predisposed to certain health conditions? A quick saliva sample and a few clicks, and 23andMe will serve up insights into your genetic blueprint. But what if the company holding that blueprint hits financial trouble? With reports swirling about 23andMe’s"
+summary: "A dated case study of 23andMe’s bankruptcy, sale process, privacy commitments, security failures, and the practical choices still available to customers."
 topics:
   - general
 status: published
@@ -12,107 +12,47 @@ featured_image: "/assets/2025/03/what-happens-to-your-dna-if-23andme-goes-bankru
 
 ---
 
-# What Happens to Your DNA if 23andMe Goes Bankrupt?
+# What Happened to Your DNA When 23andMe Entered Bankruptcy?
 
 ![What Happens to Your DNA if 23andMe Goes Bankrupt?](/assets/2025/03/what-happens-to-your-dna-if-23andme-goes-bankrupt-dna-secure.jpg)
 
 
-We live in a world where curiosity sells. Want to know your ancestry? Curious if you’re predisposed to certain health conditions? A quick saliva sample and a few clicks, and 23andMe will serve up insights into your genetic blueprint.
+> **Updated July 15, 2026:** The original article was written before the bankruptcy outcome was known. This version separates what happened from what was only a plausible risk at the time.
 
-But what if the company holding that blueprint hits financial trouble?
+In March 2025, 23andMe entered Chapter 11 protection. That turned an abstract privacy question into a real test: what happens when a consumer-genetics company changes hands?
 
-With reports swirling about 23andMe’s shaky ground following massive breaches and plummeting public trust, it’s time we ask an uncomfortable but necessary question:
+The answer is more nuanced than “your DNA gets sold to the highest bidder.”
 
-> “What happens to your DNA data if 23andMe goes bankrupt?”
+## What the sale process established
 
-Let’s break this down without sugar-coating it.
+The U.S. Federal Trade Commission warned that 23andMe's privacy promises continued to apply during a bankruptcy transfer. In June 2025, 23andMe announced a sale agreement with TTAM Research Institute, a nonprofit led by company co-founder Anne Wojcicki. The announced terms included commitments to existing privacy policies, continued account-deletion rights, limits on later transfers, and additional privacy oversight.
 
-* * *
+Those commitments matter. They do not make the underlying sensitivity disappear.
 
-### **1\. Your DNA is a Business Asset**
+Genetic information is difficult to anonymize completely, can reveal information about biological relatives, and cannot be changed like a password. A transfer can be lawful and contractually restricted while still deserving close scrutiny from customers and regulators.
 
-You may have paid for the test, but **you don’t own the infrastructure around your genetic data.** 23andMe does.
+## What the breach showed
 
-In a bankruptcy, everything the company owns becomes part of the pot that creditors can lay claim to. That includes:
+The 2023 breach remains the clearest warning in this story. A joint investigation by the United Kingdom's Information Commissioner's Office and the Office of the Privacy Commissioner of Canada found serious security failings connected to the incident, including inadequate authentication and delayed protective controls. The regulators also recorded later remediation.
 
-• Your raw genetic data
+That is stronger evidence than speculating that a financially troubled company must be neglecting security. The lesson is to look at documented controls, incidents, and enforcement findings—not infer a security posture from a share price.
 
-• Health and trait reports
+## What privacy law does—and does not—do
 
-• Family tree data
+Consumer genetic services are not necessarily covered by the same U.S. HIPAA rules that apply to health plans and many healthcare providers. That does not mean the data sits in a lawless void. Privacy policies, consumer-protection law, state or provincial law, bankruptcy orders, and regulator oversight can all matter. The exact protections depend on jurisdiction and circumstance.
 
-• Any consented research contributions
+## Practical choices for customers
 
-Now, you might say, “But they promised not to sell my data without permission.”
+If you use a consumer-genetics service:
 
-Sure. But promises can get reinterpreted during bankruptcy proceedings. When a company dissolves, **their privacy policies don’t necessarily protect you** the way you think they do. The court’s job is to pay off debts — and that often includes selling off valuable assets. Your DNA data qualifies.
+- review the current privacy policy and research-consent settings;
+- download any information you want to retain before closing an account;
+- use the provider's documented process to delete the account and request sample destruction, if that is your choice;
+- use a unique password and multifactor authentication where available; and
+- treat breach notifications as account-security events, while recognizing that ordinary credit monitoring cannot make exposed genetic information revocable.
 
-* * *
+## The durable lesson
 
-### **2\. Buyer Beware: Who Might Want It?**
+The 23andMe case does not prove that every bankruptcy results in unrestricted genetic-data sales. It proves something more useful: privacy promises, identity controls, deletion rights, transfer restrictions, and regulatory jurisdiction need to be understood **before** a corporate crisis.
 
-If 23andMe collapses, someone’s going to want that data. That “someone” might be:
-
-• A pharmaceutical company (for research or drug development)
-
-• A data analytics firm
-
-• A private equity group with plans to repackage or monetize it
-
-Even if the data is “anonymized,” let’s be honest: **genetic data isn’t really anonymous.** It’s unique to you. It’s one of the few things about you that can’t be changed or revoked. Once it’s out there, it’s out there forever.
-
-And while that might not mean much today, think 5, 10, 20 years down the line. How might that data be used? Insurance risk profiling? Discrimination? Government tracking?
-
-Yeah, this rabbit hole runs deep.
-
-* * *
-
-### **3\. No HIPAA Protection**
-
-Here’s a fact that surprises a lot of people: **HIPAA doesn’t apply to 23andMe.**
-
-That’s because 23andMe isn’t a healthcare provider or covered entity under U.S. health privacy law. It’s a consumer service.
-
-So the data you handed over is **not** protected the way your hospital records are. It exists in a legal grey zone, governed more by corporate policies than robust regulation.
-
-If the company folds, those policies get tossed into legal limbo.
-
-* * *
-
-### **4\. Security Risks and Breaches**
-
-Let’s not forget 23andMe already suffered a serious data breach in 2023. Over 6.9 million accounts were affected, and the company downplayed the incident until pressure forced them to come clean.
-
-If a company is struggling financially, they’re not investing in top-tier security infrastructure. That means **your genetic data is more vulnerable than ever** during periods of instability.
-
-Bankruptcy is chaos — and in chaos, things slip through the cracks.
-
-* * *
-
-### **5\. What Can You Do?**
-
-If you’re already a 23andMe customer, you’re not powerless — but you’re also not in full control. Here’s what I’d recommend:
-
-• **Delete your account.** It’s a start, though not a guarantee.
-
-• **Request your raw DNA file be deleted.** Be explicit. Don’t just close your account — demand data erasure.
-
-• **Request destruction of your physical sample** if it’s still stored. You can contact them directly to ask if they’re still holding it.
-
-• **Monitor your email and the dark web** for signs your data might be circulating. You can use services like HaveIBeenPwned or paid credit monitoring tools.
-
-And if you haven’t used a service like this yet? Think carefully. The benefits are real, but **so are the long-term risks.** Once you give up your genetic fingerprint, you can’t get it back.
-
-* * *
-
-## **Final Thought: Curiosity vs. Consequences**
-
-We live in a culture of curiosity. People want insights, answers, and cool facts about who they are.
-
-But curiosity isn’t free — especially not when it involves your most personal data.
-
-Bankruptcy is a business problem, but it creates a personal privacy crisis for every customer caught in the fallout. And in this case, it’s not just your credit card data or your shopping history. It’s your literal code.
-
-My advice? Be cautious. Stay informed. And remember: **just because it’s cheap and convenient doesn’t mean it’s safe.**
-
-**#StayFrosty!**
+Sources: [FTC letter concerning the bankruptcy](https://www.ftc.gov/system/files/ftc_gov/pdf/23andme-letter-ferguson.pdf), [23andMe's sale agreement announcement](https://investors.23andme.com/news-releases/news-release-details/23andme-reaches-agreement-sale-business-ttam-research-institute/), and [the joint UK–Canada enforcement findings](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/23andme-fined-for-failing-to-protect-uk-users-genetic-data/).
