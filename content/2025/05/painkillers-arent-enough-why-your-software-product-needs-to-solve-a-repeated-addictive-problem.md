@@ -1,8 +1,9 @@
 ---
-title: "Painkillers Aren’t Enough: Why Your Software Product Needs to Solve a Repeated, Addictive Problem"
+title: "Build for Recurring Usefulness and Earned Trust"
 date: 2025-05-15
+updated: 2026-09-05
 slug: painkillers-arent-enough-why-your-software-product-needs-to-solve-a-repeated-addictive-problem
-summary: "If you’ve spent more than five minutes in the startup world, you’ve probably heard this advice: “Don’t build a vitamin. Build a painkiller.” It’s become gospel. The idea is simple: people don’t need vitamins—they’re nice to have, aspirational, future-facing. Painkillers, though? People need those now. When you have a migraine, you’ll pay whatever it takes"
+summary: "A useful product earns its place by solving a real problem at the right frequency. Repeat value matters; addiction, dependence, and daily engagement are poor substitutes."
 topics:
   - mindset
   - strategy
@@ -15,167 +16,75 @@ featured_image: "/assets/2025/05/painkillers-arent-enough-why-your-software-prod
 
 ---
 
-# Painkillers Aren’t Enough: Why Your Software Product Needs to Solve a Repeated, Addictive Problem
+# Build for Recurring Usefulness and Earned Trust
 
-![Painkillers Aren’t Enough: Why Your Software Product Needs to Solve a Repeated, Addictive Problem](/assets/2025/05/painkillers-arent-enough-why-your-software-product-needs-to-solve-a-repeated-addictive-problem-painkillerorhabit.png)
+![Illustration accompanying the original painkiller-versus-habit product essay](/assets/2025/05/painkillers-arent-enough-why-your-software-product-needs-to-solve-a-repeated-addictive-problem-painkillerorhabit.png)
 
+> Reviewed September 5, 2026: Originally published as “Painkillers Aren’t Enough: Why Your Software Product Needs to Solve a Repeated, Addictive Problem.” Revised to distinguish recurring usefulness from dependence, and to recognize viable one-time purchases and occasional-use products. The original address and publication date are preserved.
 
-If you’ve spent more than five minutes in the startup world, you’ve probably heard this advice:
+“Don’t build a vitamin. Build a painkiller.” It’s familiar startup advice: solve a problem people have a reason to address.
 
-> “Don’t build a vitamin. Build a painkiller.”
+That is a useful starting point. It leaves another question unanswered: when will the customer need the solution again?
 
-It’s become gospel. The idea is simple: people don’t _need_ vitamins—they’re nice to have, aspirational, future-facing. Painkillers, though? People _need_ those now. When you have a migraine, you’ll pay whatever it takes to make it stop.
+For a product intended to serve an ongoing workflow, recurring usefulness matters. People should return because the work needs doing and the product helps them do it well. Addiction and dependence are poor design objectives.
 
-In the world of business software, this translates into solving urgent problems—manual processes, confusing workflows, data chaos, lost revenue, compliance headaches. That’s the pitch. Solve a painful problem.
+## Match the Business Model to the Need
 
-But let me tell you something that doesn’t get said enough: solving pain _once_ isn’t enough. Not if you want to build a sustainable, profitable product.
+A one-time solution can be a sound business. Migration tools, specialist utilities, and project-based products can deliver substantial value without becoming daily habits. Their economics need to work for the way customers buy and use them.
 
-You don’t just need a painkiller. You need a **habit-forming solution to a repeated problem**. Bonus points if your solution itself becomes the habit.
+Likewise, recurring use does not automatically justify a subscription. A product purchased once can remain useful for years. An occasional task may justify a service, a usage fee, or another arrangement.
 
-Let’s unpack that.
+The question is whether the value delivered, acquisition cost, support obligations, and price form a sustainable business. Frequency is part of that assessment.
 
-* * *
+## Look for Pain, Frequency, and Friction
 
-## One-Time Pain Doesn’t Build Recurring Revenue
+I find three questions useful when examining a product idea:
 
-Here’s a trap I see a lot of smart developers fall into—especially those of us with a problem-solving mindset.
+1. **Pain:** What consequence makes the problem worth solving?
+2. **Frequency:** When and how often does the customer face it?
+3. **Friction:** What makes the current approach slow, costly, confusing, or unreliable?
 
-We find a problem. We build a solution. It works. The client’s happy. Maybe we even get a few sales.
+These are prompts for investigation, not a formula that guarantees product-market fit.
 
-Then… crickets.
+Consider onboarding a new employee. Paperwork, access, equipment, and introductions need coordination each time someone joins. A useful product could make those steps clearer and reduce missed work.
 
-Why? Because the pain only flared up once. Or the person experiencing it had no real urgency to solve it again. The solution was “good enough,” or worse, it was “done.”
+Its value follows the hiring cycle. A customer who hires twice a year may need it twice a year. Asking that customer to open a dashboard every morning would add activity without improving the outcome.
 
-That’s the software equivalent of selling a fire extinguisher to someone who just had a kitchen fire. They’re glad they bought it. They may even recommend it to friends. But how often do they come back and buy _another_ one?
+## Earn a Place in the Workflow
 
-That’s not a business. That’s a transaction.
+A product earns trust by doing the expected job reliably, preserving useful context, and making the next step easier.
 
-If you want a product that scales, that people use and renew and build into their workflows, you need to look beyond painkillers.
+That can mean becoming part of a regular routine. It can also mean quietly handling work in the background or being ready when an infrequent event occurs. Less time in the interface can be a sign that the product is working well.
 
-You need **addiction-level utility**.
-
-* * *
-
-## Look for Pain + Frequency + Friction
-
-I like to think of product-market fit as a three-part equation:
-
-1.  **Pain** – is it urgent, frustrating, costing time, money, or sanity?
-2.  **Frequency** – does it happen often enough to be annoying or costly?
-3.  **Friction** – is the current workaround clunky, manual, expensive, or error-prone?
-
-When all three are high, you’ve got gold.
-
-Let’s take a real-world example.
-
-Imagine an HR manager who needs to generate onboarding paperwork for new hires. The process is painful (manual), frequent (weekly or monthly), and full of friction (errors, compliance risk, wasted time).
-
-If you build a product that automates that with a few clicks? You’re not just solving pain—you’re creating a **habit**. Every time they hire someone, they use your tool. You become part of their process.
-
-That’s recurring usage. That’s sticky.
-
-Now compare that to a tool that helps HR managers create one-time employment agreements. Helpful? Sure. But it’s a painkiller for a single moment in time. Once it’s done, it’s done.
-
-* * *
-
-## The Real Goal: Build a Product That Becomes a Behaviour
-
-The best software products don’t just solve problems. They _reshape behaviour_.
-
-Take Calendly. It didn’t just solve the pain of scheduling. It changed how we book meetings. It’s embedded now. People don’t say, “What’s your availability?” They say, “Send me your Calendly.”
-
-That’s when you know you’ve won.
-
-You want to build something people return to, rely on, and can’t imagine living without. Something they instinctively open when they sit down at their desk.
-
-It could be their CRM. Their reporting dashboard. Their task manager. Their analytics tool.
-
-Whatever it is, it’s not just “useful.” It’s **part of their flow**.
-
-That’s the leap you want to make: from utility to ritual.
-
-* * *
+Customers should be able to understand what the system does, retrieve their information, and leave without artificial obstacles. Retention built on a useful service is a stronger objective than retention manufactured through confusion or lock-in.
 
 ## Find the Trigger Moments
 
-Every habit starts with a trigger.
+Look for the event that creates the need:
 
-Great software identifies and integrates with that trigger—so the user knows when to come back and why.
+- A new hire starts an onboarding process.
+- Month end creates a reporting task.
+- A completed event prompts appropriate follow-up.
+- A material change calls for a decision.
 
-*   New sale? Update the pipeline.
-*   New hire? Start the onboarding.
-*   Month end? Run the reports.
-*   Event finished? Send follow-ups.
+Design around that event. Provide the context and controls needed to complete the work, then let the customer move on.
 
-Your job is to make sure your product is there _at the exact moment_ your user feels that familiar friction again. And ideally, you make the process so smooth that next time they say:
+A reminder is useful when it serves a real obligation. A notification sent only to pull someone back into the product deserves more scrutiny.
 
-> “Why would I ever go back to doing this manually?”
+## Test the Outcome
 
-That’s the moment you’ve replaced their behaviour. That’s when you stop being optional and start being essential.
+Novelty can attract a first look. Continued use needs a reason that survives the demonstration.
 
-* * *
+Ask customers what became easier, what errors were avoided, and what work still requires a workaround. Check whether they return when the relevant need recurs. For an annual task, tomorrow’s login count tells you very little.
 
-## Don’t Confuse Novelty with Necessity
+For background software, look at the work completed and the quality of exceptions surfaced. For a one-time tool, look at successful completion, customer satisfaction, referrals, and whether the sale supports the cost of delivery.
 
-One of the biggest temptations in the tech world is to chase novelty. The shiny new thing. The clever hack. The AI-powered, blockchain-infused, quantum-certified widget that sounds cool in a pitch deck.
+Choose measures that reflect the job the customer hired the product to do.
 
-But novelty doesn’t create habits. Repetition does.
+## What Should You Build?
 
-Just because your solution is smart doesn’t mean it’s needed—or wanted—every day.
+Start with a specific customer and a consequential problem. Understand its frequency, examine the current workaround, and test whether your approach produces a worthwhile improvement.
 
-And if you’re targeting businesses? Remember this: **enterprises don’t buy novelty. They buy reliability. They buy ROI.**
+Then choose a business model that fits the value and the cost of providing it. Make adoption straightforward, keep promises, and earn the next purchase or return visit.
 
-So stop trying to impress. Start trying to embed.
-
-* * *
-
-## What You’re Really Building Is Workflow Real Estate
-
-Think of your user’s day like a property grid. Every tool they use owns a little square of real estate in their mental and operational workflow.
-
-Slack owns communication.  
-Google owns search and docs.  
-Trello or Asana owns task flow.  
-Salesforce owns CRM (love it or hate it).
-
-If you want to succeed, you have to claim your own square. Better yet, you have to _earn_ it—by being the obvious tool to open when _that_ job needs doing.
-
-And once you’re there, you need to defend that territory with relentless utility and ease.
-
-That’s why solving a repeated problem isn’t optional—it’s foundational.
-
-* * *
-
-## So, What Should You Build?
-
-Here’s my no-BS framework for figuring it out:
-
-1.  **Start with frequency.** What do people do _every day_ or _every week_ that drives them nuts?
-2.  **Layer on friction.** What part of that task is still slow, manual, annoying, error-prone, or risky?
-3.  **Look for consequences.** What happens if they don’t fix it? What’s the cost in time, money, morale, or reputation?
-4.  **Design to slot in.** Make your tool feel like a missing puzzle piece in their process, not a whole new system to learn.
-5.  **Test stickiness early.** Ask: would they come back tomorrow _without a reminder_?
-
-If the answer to that last one is yes, you’re onto something.
-
-* * *
-
-## Final Thought: Build for Dependence, Not Just Delight
-
-Look, I love delightful software. Clean UX. Smooth onboarding. Clever little animations.
-
-But if I had to choose between a delightful product and a _necessary_ one? I’d choose necessary every time.
-
-Delight fades. Dependence sticks.
-
-So yes, go solve pain. But make sure it’s pain that _hurts again tomorrow_.
-
-Then wrap your solution around that moment so tightly that using your product isn’t just a choice—it’s the only sane option.
-
-That’s not just product-market fit.
-
-That’s product _behaviour_ fit.
-
-And that’s what makes the difference between a tool that gets tried… and one that gets kept.
-
-#StayFrosty!
+The product worth keeping is the one that continues to help when it is needed. Sometimes that means every day. Sometimes it means staying out of the way until the next important moment.

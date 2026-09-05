@@ -1,8 +1,9 @@
 ---
 title: "Local-First AI: Put the Control Plane Back Inside the Business"
 date: 2026-06-12
+updated: 2026-09-05
 slug: local-first-ai-control-plane
-summary: "Local-first AI is not a rejection of cloud models; it is a way to keep routing, policy, budget, escalation, and audit under business control."
+summary: "An architecture option for model-assisted routing, with permissions, budgets, and approvals enforced independently of the model."
 topics:
   - ai-governance
   - local-ai
@@ -19,224 +20,79 @@ canonical_url: ""
 
 ![Local-first AI control plane with selective cloud escalation](/assets/2026/06/local-first-ai-control-plane.png)
 
-The future of operational AI is not simply local models versus cloud models.
+> Reviewed September 5, 2026: Clarified the distinction between model-assisted routing and independently enforced controls. Local-first is an architecture option; the right execution path can also be cloud-first.
 
-That is the wrong frame.
+The useful question about operational AI is where authority lives and how it is enforced.
 
-The more useful architecture is local-first AI with selective escalation.
+A local-first architecture can keep sensitive processing and orchestration inside the organization while calling external services when appropriate. A local model can help interpret requests, retrieve context, and recommend a route.
 
-In that model, the organization keeps the control plane inside its own environment. A local LLM handles the first layer of interpretation, routing, classification, retrieval, and policy enforcement. External AI services are used only when the task requires capability the local system cannot provide.
+The model’s recommendation must pass through controls it cannot override. Running a model locally does not make its judgment reliable or give it authority to approve its own actions.
 
-Cloud AI becomes an escalation path.
+## The Model Assists the Control Plane
 
-Not the default.
+The control plane is the software and policy machinery that determines what can run, with which permissions, against which data, and within which limits.
 
-That distinction matters.
+An LLM can assist by classifying a request, identifying relevant context, or proposing a tool. Independent application controls must enforce:
 
-When every AI request is sent directly to a cloud provider, the business gives up more than money. It gives up control over cost, data exposure, latency, model behaviour, availability, and future pricing. The organization may still observe usage, but observation is not governance.
+- Identity and permissions.
+- Allowed destinations and data access.
+- Spending limits and usage reservations.
+- Required approvals.
+- Execution boundaries and audit records.
 
-A local-first architecture changes that.
+The model cannot grant itself permission because it believes a task is harmless. A prompt asking it to respect a budget is insufficient: the execution service needs to reject work that exceeds the permitted amount.
 
-The local model becomes the gatekeeper.
+This is the same distinction explored in [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/). Capability, containment, and authorization are separate responsibilities.
 
-It can decide whether a task should be answered locally, routed to a cheaper model, escalated to a frontier model, queued for later, blocked entirely, or sent for human review.
+## Route Work by Evidence
 
-That is where real operational control begins.
+Use a sufficiently capable path for the task, taking cost, data handling, latency, reliability, and operating effort into account.
 
-## The local LLM is the control plane
+Some extraction or classification tasks may work well locally. Other tasks may justify a cloud model from the outset. Running hardware, maintaining models, and evaluating results also cost money and time.
 
-The local model does not need to be the most powerful model in the system.
+A model’s confidence in its answer is one signal to examine, not proof that the answer is correct. Routing and acceptance criteria need evaluation against representative work, with explicit failure handling and human review where consequences warrant it.
 
-It needs to be competent enough to govern the system.
+## Tool Access Needs Its Own Controls
 
-That means it can:
+MCP can provide a structured interface to tools and services. An ordinary API can serve the same architectural purpose. The choice of interface does not establish permission or guarantee safe execution.
 
-* Understand the request.
-* Classify the task.
-* Check policy.
-* Retrieve relevant internal context.
-* Estimate risk.
-* Select the right tool or model.
-* Apply budget rules.
-* Audit what happened.
+A system might expose document search, databases, calendars, repositories, or model services through these interfaces. Each connection still needs appropriate credentials, scoped access, validation, and logging.
 
-In other words, the local LLM acts less like an all-knowing oracle and more like an intelligent dispatcher.
+The model proposes a tool call. The application checks whether that particular action is permitted before running it. Returned content should be treated as data, including when it contains text that looks like instructions.
 
-Most work should be handled at the lowest competent level.
+## Escalation Should Follow Policy
 
-Simple extraction does not need a frontier model. Routine summarization does not need premium reasoning. Basic routing does not need cloud AI at all.
+Useful rules describe concrete boundaries:
 
-The expensive external model should only be used when the local system determines that escalation is justified.
+- Approved documentation can be searched within the user’s access rights.
+- Sensitive material stays within approved processing environments.
+- External requests are limited to permitted destinations and necessary context.
+- Work above a spending threshold requires approval before execution.
+- Consequential actions receive the required human review regardless of which model proposed them.
 
-This is how mature organizations already operate.
+A request blocked by policy must not become permitted simply because another model is available. Escalation changes capability; it does not erase constraints.
 
-Not every issue goes to the CEO. Not every support ticket goes to engineering. Not every decision requires legal review.
+## A Practical Execution Path
 
-Work is triaged, routed, escalated, and governed.
+A governed system might follow this sequence:
 
-AI should work the same way.
+1. Authenticate the request and establish the user’s scope.
+2. Classify the task, with model assistance where useful.
+3. Select a candidate route using policy and evaluated capability.
+4. Check permissions, data boundaries, approvals, and available budget.
+5. Execute through a constrained service.
+6. Validate the result using task-appropriate checks.
+7. Return the result, request review, or fail safely.
+8. Record the route, actions, outcome, and cost.
 
-## MCP makes this practical
+If another route is needed, apply the checks again. Do not let a failed local attempt silently authorize an external transfer.
 
-MCP matters because it gives the local AI control plane a structured way to access external capability.
+## Local-First Is a Choice to Evaluate
 
-The local model does not need to contain every capability internally. It needs to know which tools are available, what they are allowed to do, and when to invoke them.
+Local processing can reduce reliance on external availability for supported tasks and keep selected data within an organization’s environment. It also creates responsibility for hardware, maintenance, security, and recovery.
 
-A local-first AI system might have MCP access to:
+Cloud-first and hybrid systems can enforce the same permissions, budgets, and approval boundaries. A business can own its policies and orchestration without running a local LLM.
 
-* Internal documents.
-* Databases.
-* CRM systems.
-* Email.
-* Calendars.
-* Search.
-* Code repositories.
-* Cloud LLMs.
-* Specialised AI models.
+Choose local-first when its benefits justify those operating responsibilities. Choose another arrangement when it better meets the requirements. Provider choice and model location should remain distinct from the question of who controls execution.
 
-The local model remains the coordinator.
-
-External systems become callable services.
-
-That creates a clean separation between control and capability.
-
-Control remains local.
-
-Capability can be distributed.
-
-That is the architectural shift.
-
-## Escalation should be policy-based
-
-The important part is not merely that escalation exists.
-
-The important part is that escalation follows policy.
-
-For example:
-
-* A customer support question may stay local if it can be answered from approved documentation.
-* A contract clause may be summarized locally but require cloud escalation for legal-risk analysis.
-* A code issue may be handled locally for explanation but escalated for complex refactoring.
-* A sensitive document may never leave the local environment.
-* A high-cost request may require approval before execution.
-* A customer account may have a monthly AI budget that cannot be exceeded without override.
-
-This turns AI usage into an operational workflow rather than an uncontrolled API call.
-
-The question becomes:
-
-> What is the lowest-cost, lowest-risk, sufficiently capable path for this task?
-
-That is the right question.
-
-## Token pricing is not governance
-
-This is also why token pricing is such a weak control mechanism.
-
-Tokens are a billing unit.
-
-They are not a governance model.
-
-A business cannot operationalize AI safely by watching token counters after requests have already happened. That is like trying to manage cloud infrastructure by reading the bill at the end of the month.
-
-The real controls need to exist before execution:
-
-* Can this run?
-* Where can it run?
-* What model can it use?
-* What data can be sent?
-* What is the maximum spend?
-* What happens if the request exceeds limits?
-* When is human approval required?
-
-These are governance questions.
-
-A local-first control plane can answer them before the expensive work begins.
-
-## What the architecture looks like
-
-A practical local-first AI system might follow this pattern:
-
-1. User request comes in.
-2. The local LLM classifies the request.
-3. The system checks policy.
-4. Relevant internal context is retrieved.
-5. The local model attempts the task.
-6. The answer is scored for confidence, completeness, risk, and cost.
-7. If acceptable, the response is returned.
-8. If not, the request is escalated through an approved MCP connector.
-9. The external result is validated locally.
-10. The final response is logged, audited, and returned.
-
-That pattern matters because the cloud model is no longer operating independently.
-
-It is being supervised.
-
-The local system asks the question. The local system decides what context is shared. The local system receives the answer. The local system checks the result. The local system records the cost.
-
-The local system remains in control.
-
-## This is about operational resilience
-
-Cost is only one part of the argument.
-
-The bigger issue is resilience.
-
-If the organization depends entirely on one cloud AI provider, then its AI capability is exposed to that provider's pricing, outages, throttling, model changes, deprecations, policy changes, and commercial priorities.
-
-A local-first architecture reduces that dependency.
-
-If one provider changes terms, another can be added. If a model is deprecated, routing can change. If a task is sensitive, it can remain local. If budgets tighten, escalation thresholds can be adjusted. If performance degrades, traffic can be shifted.
-
-The organization owns the control plane.
-
-That is the point.
-
-## Local-first does not mean local-only
-
-This distinction is important.
-
-Local-first AI is not an ideological rejection of cloud AI.
-
-Cloud models are useful. Frontier models are often better at complex reasoning, coding, synthesis, and unfamiliar problems.
-
-The mistake is using them as the default path for every task.
-
-Local-first means the local system gets the first right of refusal.
-
-If the task can be handled locally, it stays local.
-
-If it cannot, it escalates deliberately.
-
-That is a much more mature operating model.
-
-## The new AI stack
-
-The emerging stack looks something like this:
-
-* Local LLM for control.
-* Local retrieval for organizational memory.
-* Local policies for governance.
-* MCP for tool and model access.
-* Cloud AI for selected escalation.
-* Audit logs for accountability.
-* Budget rules for financial control.
-* Human approval for high-risk actions.
-
-This is how AI becomes operational infrastructure rather than experimental software.
-
-The organization stops asking:
-
-> How many tokens will this use?
-
-And starts asking:
-
-> What is the correct execution path for this task?
-
-That is the shift.
-
-Token pricing gives the illusion of control.
-
-Local-first AI with governed escalation creates actual control surfaces.
-
-That is the difference between using AI and operationalizing it.
+The enduring principle is business control over the execution path: clear authority, independent enforcement, inspectable outcomes, and a deliberate way to handle failure.

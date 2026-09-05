@@ -12,7 +12,9 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 
 ## Source Layout
 
-- `index.md` controls the public homepage.
+- `index.md` controls the public homepage and selected starting points.
+- `reading-paths.md` provides curated routes by interest; the homepage and content index link to these sections.
+- `governing-intelligent-systems.md` remains the deeper guide to the governance theme.
 - `search.md` controls `/search/`, the client-side search page powered by `/search-index.json`.
 - `about.md` controls `/about/`.
 - `content/YYYY/MM/*.md` contains dated articles, notes, and source material.
@@ -161,7 +163,9 @@ Reference them from Markdown with an absolute site path:
 ![Alt text for the image](/assets/YYYY/MM/image-name.jpg)
 ```
 
-Site CSS constrains article images to the text width, so large source images can remain large on disk without breaking the page layout.
+Site CSS constrains article images to the text width. An image-only first paragraph in a dated article is also limited to 240px high, preserving its aspect ratio so the introduction appears sooner. Later diagrams retain their normal dimensions.
+
+When revising an existing argument, preserve its slug and original publication date, add `updated` front matter, and include a visible review note explaining the substantive change.
 
 ## Local Preview
 

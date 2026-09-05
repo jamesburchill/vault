@@ -12,6 +12,8 @@ That changes the work.
 
 The hard question is no longer only whether a system can be built. It is whether it can be governed as it changes, connects, adapts, and drifts.
 
+For a broader introduction across business, publishing, and practical software work, choose a [reading path](/reading-paths/).
+
 ## Core Idea
 
 Intelligent systems need more than execution environments. They need operational coherence:
@@ -35,7 +37,7 @@ The reason is simple: [Because Drift Happens™](https://becausedrifthappens.com
   AI agent runtimes solve the execution problem, but serious autonomous systems also need governance, authorization, escalation, and provenance.
 
 - [Local-First AI: Put the Control Plane Back Inside the Business](/content/2026/06/local-first-ai-control-plane/)  
-  Local-first AI is not a rejection of cloud models; it is a way to keep routing, policy, budget, escalation, and audit under business control.
+  An architecture option for model-assisted routing, with permissions, budgets, and approvals enforced independently of the model.
 
 - [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)  
   Token accounting shows where machine cognition is being consumed, why it is being consumed, and when usage patterns may indicate drift.

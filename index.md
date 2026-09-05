@@ -1,6 +1,6 @@
 ---
 title: The Vault - James Burchill
-description: Field notes on governing intelligent systems, operational coherence, AI drift, provenance, and control surfaces.
+description: Field notes on software, AI, business, and the decisions that keep systems useful as they change.
 permalink: /
 ---
 
@@ -8,45 +8,38 @@ permalink: /
   <img src="/assets/theVault.png" alt="The Vault" width="400" height="150">
 </div>
 
-# Field Notes on Governing Intelligent Systems
+# Field Notes on Software, AI, and Business
 
-Because drift happens, intelligent systems need operational coherence, explicit control surfaces, provenance, and practical governance.
+Field notes on software, AI, business, and the decisions that keep systems useful as they change.
 
-This is the public field-notes layer behind my work on systems that must stay coherent under change.
+I’m James Burchill. My work spans engineering, publishing, teaching, entrepreneurship, and technical leadership. This is where I explore what I learn from building systems, working through difficult decisions, and watching how things change in practice.
+
+[Because Drift Happens™](https://becausedrifthappens.com/) is a recurring theme: how small changes accumulate, and what helps us notice and respond.
 
 <p class="button-row">
-  <a class="md-button md-button--primary" href="/governing-intelligent-systems/">Start here</a>
-  <a class="md-button" href="https://becausedrifthappens.com/">Because Drift Happens™</a>
-  <a class="md-button" href="/content/">Browse all content</a>
+  <a class="md-button md-button--primary" href="/reading-paths/">Find a reading path</a>
+  <a class="md-button" href="/content/">Browse the archive</a>
+  <a class="md-button" href="/about/">About the Vault</a>
 </p>
 
-## Start Here
+## Start with Your Interest
 
-- [Governing Intelligent Systems](/governing-intelligent-systems/)  
-  The category I am building around: how intelligent systems stay coherent, accountable, and governable under change.
+- [Building with AI](/reading-paths/#building-with-ai) — From a working prototype to systems with clear boundaries and human control.
+- [Architecture and Operations](/reading-paths/#architecture-and-operations) — Decisions that make software easier to maintain, recover, and trust.
+- [Business and Product](/reading-paths/#business-and-product) — Useful products, sustainable operations, and choices that respect customers.
+- [Writing and Judgment](/reading-paths/#writing-and-judgment) — Making ideas clearer, inspecting evidence, and recognizing patterns.
 
-- [Because Drift Happens™](https://becausedrifthappens.com/)  
-  The core thesis: drift is the default condition of all systems.
+For the deeper systems theme, explore [Governing Intelligent Systems](/governing-intelligent-systems/).
 
-- [Runtime Isolation Is Not Governance](/content/2026/05/runtime-isolation-is-not-governance/)  
-  AI agent runtimes solve the execution problem, but serious autonomous systems also need governance, authorization, escalation, and provenance.
+## Selected Starting Points
 
-- [Token Accounting and the Flow of Machine Cognition](/content/2026/06/token-accounting-machine-cognition/)  
-  Token accounting turns AI usage into an observability signal for machine cognition, cost, escalation, and drift.
+- [By Inches](/content/2026/05/by-inches/) — A personal introduction to the way small exceptions change a system’s direction.
+- [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/) — Why easier building makes practical review more valuable.
+- [Why We Don’t Build Custom Operating Systems](/content/2026/07/why-we-dont-build-custom-operating-systems/) — An engineering choice explained through its consequences for customers.
 
-- [Semantic Indexing's Dirty Little Secret: Entropy](/content/2026/06/semantic-indexing-entropy/)  
-  Semantic indexing entropy explains why retrieval alone cannot preserve organizational meaning when language, policy, ownership, and evidence drift.
+## Recent Writing
 
-- [Semantic Objects Come Before Semantic Indexes](/content/2026/06/semantic-objects-come-before-semantic-indexes/)
-  Semantic objects explain how meaning, metadata, provenance, and classification shape a Business Index before embeddings or retrieval can help.
-
-- [AI Can Generate Software. Reality Still Gets A Vote.](/content/2026/05/ai-can-generate-software-reality-still-gets-a-vote/)  
-  AI-assisted software has lowered the barrier to building, but real systems still need structured review, operational judgement, and respect for consequence.
-
-- [By Inches](/content/2026/05/by-inches/)  
-  A practical reflection on how systems drift through small, repeated deviations.
-
-## Latest
+This is an evolving collection of essays and field notes, published when there is something useful to add. Dates below are original publication dates; substantive revisions are noted in the articles.
 
 {% for item in collections.vaultContent.slice(0, 3) %}
 - [{{ item.data.title or item.fileSlug }}]({{ item.url }}){% if item.data.date %} &mdash; {{ item.data.date | readableDate }}{% endif %}{% if item.data | summary %}  

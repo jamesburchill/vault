@@ -6,9 +6,18 @@ permalink: /content/
 
 # Content
 
-Public writing, notes, references, and source material live here in dated folders. This index is generated from the Markdown files under `content/`.
+Explore essays and field notes by interest or publication date.
 
-## Latest
+## Browse by Interest
+
+- [Building with AI](/reading-paths/#building-with-ai)
+- [Architecture and Operations](/reading-paths/#architecture-and-operations)
+- [Business and Product](/reading-paths/#business-and-product)
+- [Writing and Judgment](/reading-paths/#writing-and-judgment)
+
+Each path offers a few starting points. For a specific subject, [search the Vault](/search/).
+
+## Recent Writing
 
 {% for item in collections.vaultContent.slice(0, 3) %}
 - [{{ item.data.title or item.fileSlug }}]({{ item.url }}){% if item.data.date %} — {{ item.data.date | readableDate }}{% endif %}{% if item.data | summary %}  

@@ -188,6 +188,17 @@ a:hover {
   margin-right: auto;
 }
 
+/* Keep opening article artwork secondary to the writing; preserve its aspect ratio. */
+.vault-article > p:first-of-type > img:only-child {
+  max-height: 240px;
+  width: auto;
+  object-fit: contain;
+}
+
+.content h2[id] {
+  scroll-margin-top: 9rem;
+}
+
 .home-masthead {
   margin: 0 0 2rem;
 }

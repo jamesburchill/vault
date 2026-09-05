@@ -6,7 +6,7 @@ permalink: /search/
 
 # Search
 
-Search the public vault using the generated index. Results are built from article metadata and link back to the canonical published pages.
+Find articles by title, summary, topic, or publication date. Not sure where to begin? Choose a [reading path](/reading-paths/).
 
 <div class="search-panel" data-vault-search>
   <form class="search-form" role="search" data-search-form>
