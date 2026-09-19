@@ -1,6 +1,6 @@
 ---
 title: The Vault - James Burchill
-description: Field notes on software, AI, business, and the decisions that keep systems useful as they change.
+description: Business, technology, and practical ideas from James Burchill, Business Systems Architect, CTO, and bestselling author.
 permalink: /
 ---
 
@@ -8,13 +8,13 @@ permalink: /
   <img src="/assets/theVault.png" alt="The Vault" width="400" height="150">
 </div>
 
-# Field Notes on Software, AI, and Business
+# Business, Technology & Practical Ideas
 
-Field notes on software, AI, business, and the decisions that keep systems useful as they change.
+The Vault is my online content library: practical knowledge, essays, field notes, and resources across business and technology.
 
-I’m James Burchill. My work spans engineering, publishing, teaching, entrepreneurship, and technical leadership. This is where I explore what I learn from building systems, working through difficult decisions, and watching how things change in practice.
+I’m James Burchill—a Business Systems Architect, CTO, and bestselling author. My work crosses engineering, business, marketing, communications, and teaching. Here I share ideas drawn from client work, independent product development, and a career spent turning complex problems into working solutions.
 
-[Because Drift Happens™](https://becausedrifthappens.com/) is a recurring theme: how small changes accumulate, and what helps us notice and respond.
+[Because Drift Happens™](https://becausedrifthappens.com/) is a recurring theme: how businesses and their systems move away from their original intent, and how we recognize and respond. It informs my broader systems work and [Driftinel](https://jamesburchill.com/driftinel/), the drift detection system I’m developing.
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="/reading-paths/">Find a reading path</a>

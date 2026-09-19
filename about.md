@@ -1,14 +1,14 @@
 ---
 title: About The Vault
-description: James Burchill’s field notes on software, AI, business, publishing, and practical judgment.
+description: The content library of James Burchill, Business Systems Architect, CTO, and bestselling author.
 permalink: /about/
 ---
 
 # About the Vault
 
-I’m James Burchill. For more than four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
+I’m James Burchill—a Business Systems Architect, CTO, and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
 
-Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault brings those perspectives together in essays, practical explanations, and working ideas.
+Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my online content library, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
 
 ## What You’ll Find Here
 
@@ -20,7 +20,13 @@ These are field notes, not a claim that every question is settled. I distinguish
 
 ## The Work Behind the Writing
 
-My work spans technical leadership, independent ventures, and selected private engagements. I currently serve as CTO at Tooljar while also developing my own products and working directly with other founders and organizations.
+I help business owners turn complex problems into working solutions through advisory, paid discovery, and separately scoped implementation. I carry the context from initial discovery through design, development, and deployment, connecting business priorities, technical decisions, and practical delivery.
+
+Current engagements include CTO at Tooljar, alongside selected business systems and technology projects.
+
+I use AI extensively to explore options, challenge assumptions, develop designs, and accelerate implementation. Established business and engineering principles guide the approach, and I retain responsibility for the decisions and quality of the work.
+
+My independent work includes [Driftinel](https://jamesburchill.com/driftinel/), a drift detection system in development, and the [Because Drift Happens™](https://becausedrifthappens.com/) doctrine that informs it. Publishing and teaching are also central to my work: three bestselling books, courses reaching more than 36,000 learners, and teaching at Sheridan College and McMaster University.
 
 The public examples here illustrate parts of that work. Private engagements remain private.
 
