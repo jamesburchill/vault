@@ -20,17 +20,11 @@ These are field notes, not a claim that every question is settled. I distinguish
 
 ## The Work Behind the Writing
 
-I help business owners turn complex problems into working solutions through advisory, paid discovery, and separately scoped implementation. I carry the context from initial discovery through design, development, and deployment, connecting business priorities, technical decisions, and practical delivery.
+I currently serve as CTO at Tooljar and pursue independent projects, including [Driftinel](https://jamesburchill.com/driftinel/), a software project I’m developing.
 
-Current engagements include CTO at Tooljar, alongside selected business systems and technology projects.
+I’ve also written three bestselling books and taught at Sheridan College and McMaster University. Writing, teaching, and building systems continue to inform the ideas I explore here.
 
-I use AI extensively to explore options, challenge assumptions, develop designs, and accelerate implementation. Established business and engineering principles guide the approach, and I retain responsibility for the decisions and quality of the work.
-
-My independent work includes [Driftinel](https://jamesburchill.com/driftinel/), a drift detection system in development, and the [Because Drift Happens™](https://becausedrifthappens.com/) doctrine that informs it. Publishing and teaching are also central to my work: three bestselling books, courses reaching more than 36,000 learners, and teaching at Sheridan College and McMaster University.
-
-The public examples here illustrate parts of that work. Private engagements remain private.
-
-For an overview of my work and engagements, visit [JamesBurchill.com](https://jamesburchill.com/). You can also find me on [LinkedIn](https://www.linkedin.com/in/jamesburchill/).
+You can find more about me at [JamesBurchill.com](https://jamesburchill.com/) or on [LinkedIn](https://www.linkedin.com/in/jamesburchill/).
 
 ## Finding Your Way Around
 
