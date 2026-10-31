@@ -14,9 +14,21 @@ eleventyExcludeFromCollections: true
   <url>
     <loc>{{ site.url }}/content/</loc>
   </url>
+  <url>
+    <loc>{{ site.url }}/reading-paths/</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/governing-intelligent-systems/</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/because-drift-happens/</loc>
+  </url>
 {%- for item in collections.vaultContent %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
+    {% if item.data.updated or item.data.modified %}
+    <lastmod>{{ (item.data.updated or item.data.modified) | dateOnly }}</lastmod>
+    {% endif %}
   </url>
 {%- endfor %}
 {%- for year in collections.vaultYears %}

@@ -2,7 +2,7 @@
 title: "AI Isn’t Killing Creativity — It’s Killing “Good Enough”"
 date: 2025-10-10
 slug: ai-isnt-killing-creativity-its-killing-good-enough
-summary: "TL;DR (Quick Take): Stop Lying to Yourself — AI Isn’t the Enemy If you’re still muttering that AI is going to “kill creativity” or “replace humans,” I’ve got bad news for you: you’re missing the point. The truth is uglier and more liberating at the same time. AI isn’t killing creativity — it’s killing your"
+summary: "An argument for using AI to move beyond generic output, with human judgment, originality, and direction at the centre of creative work."
 topics:
   - mindset
   - systems

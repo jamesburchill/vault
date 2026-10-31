@@ -92,6 +92,10 @@ Generated public artefacts include:
 - `/.well-known/provenance.json` for the site-level provenance index.
 - `/content/YYYY/MM/slug/provenance.jsonld` for per-article provenance documents.
 
+The sitemap includes the published articles, date archives, and curated reading/topic guides. Article `lastmod` is emitted only when an explicit `updated` or `modified` date is present. Without an explicit revision date, it is omitted; neither the publication date nor the build date is used as a fallback. Explicit revision dates also appear in article Open Graph and JSON-LD metadata.
+
+Submit `/sitemap.xml` to Google Search Console; the successful RSS submission may also be retained. `llms.txt`, the JSON search index, and provenance files serve other consumers and are not Google sitemap submissions. Retire obsolete WordPress sitemap submissions only after confirming coverage in the current sitemap. Search Console cleanup is an external action, separate from building this repository.
+
 The generated JSON is not maintained by hand. Run `make build` or `npm run build` locally to validate content metadata and regenerate the public artefacts into `_site/`. The GitHub Pages workflow runs the same build on every push to `main`.
 
 ## Provenance

@@ -28,6 +28,7 @@ For technical leaders and builders concerned with maintenance, recovery, and the
 1. [Why Deployment Should Be Boring](/content/2026/07/why-deployment-should-be-boring/) — Begin the seven-part Inside the Architecture series.
 2. [Why Predictable Recovery Matters More Than Perfect Uptime](/content/2026/07/why-predictable-recovery-matters-more-than-perfect-uptime/) — Think about what happens after a failure.
 3. [Why We Don’t Build Custom Operating Systems](/content/2026/07/why-we-dont-build-custom-operating-systems/) — Decide which engineering obligations are worth taking on.
+4. [Apple Containers vs Docker on macOS: Differences and Trade-offs](/content/2025/09/apples-new-containerization-feature-what-it-is-how-it-differs-from-docker-and-when-to-choose-it/) — Compare local development runtimes, networking, and isolation before changing your workflow.
 
 <h2 id="business-and-product">Business and Product</h2>
 
