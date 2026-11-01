@@ -85,6 +85,11 @@ Generated public artefacts include:
 
 - `/search/` for in-site search over published article metadata.
 - `/search-index.json` for lightweight search, AI, and discovery metadata.
+- `/full-text-index.json` for the public MCP library: published article bodies
+  (rendered HTML without the site layout), metadata, canonical URLs, explicit
+  revision dates where available, and a build timestamp. The MCP service extracts
+  readable text for word-based search and source excerpts. Draft/private articles
+  are excluded through the same published collection as the existing index.
 - `/feeds/vault.json` for JSON Feed consumers.
 - `/feeds/rss.xml` for RSS readers.
 - `/llms.txt` for AI-oriented discovery.
@@ -97,6 +102,10 @@ The sitemap includes the published articles, date archives, and curated reading/
 Submit `/sitemap.xml` to Google Search Console; the successful RSS submission may also be retained. `llms.txt`, the JSON search index, and provenance files serve other consumers and are not Google sitemap submissions. Retire obsolete WordPress sitemap submissions only after confirming coverage in the current sitemap. Search Console cleanup is an external action, separate from building this repository.
 
 The generated JSON is not maintained by hand. Run `make build` or `npm run build` locally to validate content metadata and regenerate the public artefacts into `_site/`. The GitHub Pages workflow runs the same build on every push to `main`.
+
+After changing the full-text feed, run `node scripts/validate-full-text-index.mjs`
+after the build. Publish and verify this feed before deploying an MCP version
+that depends on it; the lightweight website search remains independent.
 
 ## Provenance
 

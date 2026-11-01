@@ -1,0 +1,26 @@
+---
+permalink: /full-text-index.json
+layout: false
+eleventyExcludeFromCollections: true
+---
+{
+  "version": 1,
+  "generated_at": {{ site.buildDate | isoDate | json | safe }},
+  "items": [
+{%- for item in collections.vaultContent %}
+    {
+      "title": {{ (item.data.title or item.fileSlug) | json | safe }},
+      "slug": {{ (item.data.slug or item.fileSlug) | json | safe }},
+      "url": {{ (site.url + item.url) | json | safe }},
+      "canonical_url": {{ (item.data.canonical_url or (site.url + item.url)) | json | safe }},
+      "source_path": {{ item.inputPath | sourcePath | json | safe }},
+      "date_published": {{ item.data.date | dateOnly | json | safe }},
+      "date_modified": {% if item.data.updated or item.data.modified %}{{ (item.data.updated or item.data.modified) | dateOnly | json | safe }}{% else %}null{% endif %},
+      "status": {{ (item.data.status or "published") | lower | json | safe }},
+      "topics": {{ (item.data | topics) | json | safe }},
+      "summary": {{ (item.data | summary) | json | safe }},
+      "content_html": {{ item.templateContent | json | safe }}
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}
