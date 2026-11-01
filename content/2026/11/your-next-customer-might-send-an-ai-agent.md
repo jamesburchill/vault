@@ -119,3 +119,5 @@ Start there.
 Pick one useful interaction. Make it accurate, give it clear boundaries, and measure whether it helps.
 
 You don’t need to predict exactly how customers will use AI. You can begin by making your business easier to work with when they do.
+
+You can explore a small example on my own website: [connect your AI assistant](https://jamesburchill.com/mcp/) to search my published writing and follow the original sources.
