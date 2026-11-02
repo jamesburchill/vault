@@ -26,3 +26,5 @@ This is a naming convention I’d like to see more businesses adopt. It won’t 
 Publish your connection instructions on your website, too. Make it easy.
 
 P.S. Not sure what an MCP service is or why your business might need one? Read [Your Next Customer Might Send an AI Agent](https://vault.jamesburchill.com/content/2026/11/your-next-customer-might-send-an-ai-agent/) for a practical introduction.
+
+For a working example, read [Send Your AI Assistant to My MCP Service](https://vault.jamesburchill.com/content/2026/11/send-your-ai-assistant-to-my-mcp-service/), with prompts you can try and the curl command behind tool discovery.

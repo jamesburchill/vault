@@ -121,3 +121,5 @@ Pick one useful interaction. Make it accurate, give it clear boundaries, and mea
 You don’t need to predict exactly how customers will use AI. You can begin by making your business easier to work with when they do.
 
 You can explore a small example on my own website: [connect your AI assistant](https://jamesburchill.com/mcp/) to search my published writing and follow the original sources.
+
+For a working example, read [Send Your AI Assistant to My MCP Service](https://vault.jamesburchill.com/content/2026/11/send-your-ai-assistant-to-my-mcp-service/), with prompts you can try and the curl command behind tool discovery.
