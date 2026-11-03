@@ -1,0 +1,7 @@
+<div class="article-meta">
+  <span>By <a href="/about/">James Burchill</a></span>
+  {% if date %}<span>Published <time datetime="{{ date | dateOnly }}">{{ date | readableDate }}</time></span>{% endif %}
+  {% if updated or modified %}<span>Revised <time datetime="{{ (updated or modified) | dateOnly }}">{{ (updated or modified) | readableDate }}</time></span>{% endif %}
+  {% set kind = {slug: slug, content_type: content_type} | contentType %}{% if kind %}<span>{{ kind }}</span>{% endif %}
+  <div class="article-subjects">{% set linkedSubjects = topics | subjectsFor %}{% for subject in linkedSubjects %}<a href="/subjects/{{ subject.id }}/">{{ subject.title }}</a>{% else %}{% for topic in (topics or []).slice(0, 2) %}<a href="/search/?q={{ topic | topicQuery }}">{{ topic }}</a>{% endfor %}{% endfor %}</div>
+</div>

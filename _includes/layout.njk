@@ -73,8 +73,8 @@
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/reading-paths/">Start Here</a>
-        <a href="https://becausedrifthappens.com/">Doctrine</a>
-        <a href="/content/">Content</a>
+        <a href="https://becausedrifthappens.com/">Because Drift Happens</a>
+        <a href="/content/">Writing</a>
         <a href="/search/">Search</a>
         <a href="/about/">About</a>
       </nav>
@@ -82,7 +82,18 @@
 
     <main class="page-shell">
       <article class="content{% if isArticle %} vault-article{% endif %}">
-        {{ content | safe }}
+        {% if isArticle %}
+        {% set articleMeta %}{% include "article-meta.njk" %}{% endset %}
+        {{ content | withArticleMeta(articleMeta) | safe }}
+        {% set nextReads = collections.vaultContent | nextReads(page.url) %}
+        {% if nextReads.length %}
+        <section class="next-reads" aria-label="Read next">
+          <h2>Read Next</h2>
+          <ul>{% for next in nextReads %}<li><a href="{{ next.item.url }}">{{ next.item.data.title }}</a>{% if next.reason or next.item.data.summary %}<p>{{ next.reason or next.item.data.summary }}</p>{% endif %}</li>{% endfor %}</ul>
+        </section>
+        {% endif %}
+        {% include "follow.njk" %}
+        {% else %}{{ content | safe }}{% endif %}
         {% if page.inputPath | isVaultArticle %}
         <p class="source-link">
           <a href="{{ page.inputPath | sourceUrl(site.repository) }}">View source Markdown</a>
@@ -97,6 +108,7 @@
       <span>Copyright {{ site.copyrightYear }} ~ <a href="https://JamesBurchill.com">JamesBurchill.com</a></span>
       <span>Markdown source is canonical.</span>
       <a href="https://jamesburchill.com/mcp/">Connect your AI assistant</a>
+      <a href="/books-resources/">Books &amp; Resources</a>
       <a href="/llms.txt">llms.txt</a>
       <a href="/search-index.json">Search index</a>
       <a href="/feeds/vault.json">JSON feed</a>

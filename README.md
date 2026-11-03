@@ -228,3 +228,33 @@ Review imported Markdown and images before publishing.
 In the GitHub repository settings, configure Pages to use **GitHub Actions** as the build and deployment source.
 
 When the custom domain is ready, set `vault.jamesburchill.com` in GitHub Pages and point DNS at GitHub Pages.
+
+## Editorial Navigation and Following
+
+`/content/` is the Writing landing page; its chronological archive and existing
+article URLs are unchanged. `subjects.njk` generates four subject pages from
+explicit topic mappings in `scripts/editorial.cjs`. Unmapped writing remains in
+the archive, search and feeds. `reading-paths.md` remains manually curated; its
+existing anchors are retained, including `writing-and-judgment`.
+
+The shared article layout shows author, original publication date and explicit
+`updated`/`modified` dates only. Optional `content_type` supports descriptive
+labels; a few reviewed examples live in `scripts/editorial.cjs`. Article bodies
+are unchanged. `related_reading` can contain `{slug, reason}` entries, or `false`
+to suppress recommendations. Editorial selections take precedence over a fallback
+requiring two shared specific topics. Existing series/reading navigation suppresses
+additional recommendations. Source and provenance follow the reading actions.
+
+`_includes/follow.njk` keeps RSS visible. Email is disabled by default. To activate,
+provide an approved provider-hosted HTTPS signup URL as `VAULT_SUBSCRIBE_URL` in
+the build environment (including GitHub Actions). The destination must supply the
+approved list, consent wording, privacy notice and unsubscribe process. No API key
+or local collection form is needed. The former `/newsletter` author-site URL
+returned 404 during the November 3, 2026 review; no working provider was found.
+
+`/books-resources/` links to the verified featured book, learning guides and public
+MCP connection instructions. No earlier book catalogue has been invented.
+
+After a build, run `node scripts/validate-editorial.mjs` alongside the provenance
+and full-text validators. Release remains the existing push-to-main GitHub Pages
+workflow; local implementation does not authorize a commit, push or deployment.

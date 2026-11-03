@@ -23,6 +23,10 @@ eleventyExcludeFromCollections: true
   <url>
     <loc>{{ site.url }}/because-drift-happens/</loc>
   </url>
+  <url><loc>{{ site.url }}/books-resources/</loc></url>
+{%- for subject in subjects %}
+  <url><loc>{{ site.url }}/subjects/{{ subject.id }}/</loc></url>
+{%- endfor %}
 {%- for item in collections.vaultContent %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>

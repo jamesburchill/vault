@@ -1,0 +1,13 @@
+---
+pagination:
+  data: subjects
+  size: 1
+  alias: subject
+permalink: "/subjects/{{ subject.id }}/"
+eleventyComputed:
+  title: "{{ subject.title }}"
+---
+<h1>{{ subject.title }}</h1>
+<p><a href="/reading-paths/#{{ subject.pathAnchor or subject.id }}">Start with the curated reading path</a>, or browse related writing below, newest first.</p>
+<ul class="writing-list">{% for item in collections.vaultContent | inSubject(subject) %}<li><a href="{{ item.url }}">{{ item.data.title }}</a> -- <time datetime="{{ item.data.date | dateOnly }}">{{ item.data.date | readableDate }}</time><p>{{ item.data.summary }}</p></li>{% endfor %}</ul>
+<p><a href="/content/">All writing and the chronological archive</a></p>

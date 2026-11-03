@@ -1,6 +1,6 @@
 ---
 title: Reading Paths
-description: Selected Vault articles on building with AI, architecture, business, publishing, and judgment.
+description: Selected Vault articles on building with AI, architecture, business, publishing, and judgement.
 permalink: /reading-paths/
 ---
 
@@ -11,7 +11,7 @@ Start with the problem or idea that interests you. These are selected routes thr
 - [Building with AI](#building-with-ai)
 - [Architecture and Operations](#architecture-and-operations)
 - [Business and Product](#business-and-product)
-- [Writing and Judgment](#writing-and-judgment)
+- [Writing and Judgement](#writing-and-judgment)
 
 <h2 id="building-with-ai">Building with AI</h2>
 
@@ -38,7 +38,7 @@ For founders and operators connecting product decisions to useful outcomes for c
 2. [Semantic Objects Come Before Semantic Indexes](/content/2026/06/semantic-objects-come-before-semantic-indexes/) — Understand what a business information system needs to preserve before choosing retrieval technology.
 3. [By Inches](/content/2026/05/by-inches/) — Notice how reasonable exceptions can accumulate into an expensive change of direction.
 
-<h2 id="writing-and-judgment">Writing and Judgment</h2>
+<h2 id="writing-and-judgment">Writing and Judgement</h2>
 
 For readers interested in how ideas are communicated, challenged, and revised.
 

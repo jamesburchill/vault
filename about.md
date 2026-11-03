@@ -8,7 +8,7 @@ permalink: /about/
 
 I’m James Burchill—a Business Systems Architect, CTO, and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
 
-Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my online content library, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
+Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my collection of writing, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
 
 ## What You’ll Find Here
 

@@ -1,5 +1,6 @@
 const path = require("node:path");
 const fs = require("node:fs");
+const editorial = require("./scripts/editorial.cjs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
@@ -15,6 +16,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("AGENTS.md");
 
+  eleventyConfig.addGlobalData("subjects", editorial.subjects);
+  // A provider-hosted signup page owns consent and privacy. No local email collection.
+  const subscriptionUrl = process.env.VAULT_SUBSCRIBE_URL || "";
+  if (subscriptionUrl && new URL(subscriptionUrl).protocol !== "https:") throw new Error("VAULT_SUBSCRIBE_URL must use HTTPS");
+  eleventyConfig.addGlobalData("subscription", { url: subscriptionUrl });
+  eleventyConfig.addFilter("subjectsFor", editorial.subjectsFor);
+  eleventyConfig.addFilter("inSubject", (items, subject) => items.filter(i => editorial.subjectsFor(i.data.topics).some(s => s.id === subject.id)));
+  eleventyConfig.addFilter("nextReads", editorial.nextReads);
+  eleventyConfig.addFilter("contentType", data => data.content_type || editorial.types[data.slug] || "");
+  eleventyConfig.addFilter("withArticleMeta", (html, meta) => html.replace(/<\/h1>/i, match => match + meta));
+  eleventyConfig.addFilter("topicQuery", value => encodeURIComponent(value));
   eleventyConfig.addGlobalData("layout", "layout.njk");
   eleventyConfig.addGlobalData("site", {
     name: "The Vault - James Burchill",

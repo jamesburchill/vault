@@ -577,3 +577,13 @@ a:hover {
     gap: 0.1rem;
   }
 }
+
+/* Shared reading metadata and quiet follow controls. */
+.article-meta { color: var(--vault-muted); font-size: 0.88rem; margin: -0.7rem 0 1.6rem; }
+.article-meta > span { display: inline-block; margin-right: 1rem; }
+.article-subjects { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin-top: 0.4rem; }
+.follow-writing { border-top: 1px solid var(--vault-line); margin-top: 2rem; padding-top: 1rem; font-size: 0.92rem; }
+.writing-list > li { margin-bottom: 1.2rem; }
+.content { overflow-wrap: anywhere; }
+.vault-article table { display: block; max-width: 100%; overflow-x: auto; }
+@media screen and (max-width: 44.984375em) { .site-header { position: static; } }
