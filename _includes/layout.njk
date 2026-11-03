@@ -8,7 +8,8 @@
     {% set isArticle = page.inputPath | isVaultArticle %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if metaTitle and metaTitle != site.name %}{{ metaTitle }} | {% endif %}{{ site.name }}</title>
+    <meta name="theme-color" content="#263d31">
+    <title>{% if page.url == "/" %}{{ metaTitle }}{% else %}{% if metaTitle and metaTitle != site.name %}{{ metaTitle }} | {% endif %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{{ metaDescription }}">
     <link rel="canonical" href="{{ canonicalUrl }}">
     <link rel="icon" href="/assets/white-lion.png" type="image/png">
@@ -50,12 +51,12 @@
   "author": {
     "@type": "Person",
     "name": "James Burchill",
-    "url": "https://JamesBurchill.com"
+    "url": "https://jamesburchill.com/"
   },
   "publisher": {
     "@type": "Person",
     "name": "James Burchill",
-    "url": "https://JamesBurchill.com"
+    "url": "https://jamesburchill.com/"
   }{% if date %},
   "datePublished": {{ date | isoDate | json | safe }}{% endif %}{% if updated or modified %},
   "dateModified": {{ (updated or modified) | isoDate | json | safe }}{% endif %}{% if original_url %},
@@ -76,7 +77,8 @@
         <a href="https://becausedrifthappens.com/">Because Drift Happens</a>
         <a href="/content/">Writing</a>
         <a href="/search/">Search</a>
-        <a href="/about/">About</a>
+        <a href="/about/">About the Vault</a>
+        <a href="https://jamesburchill.com/">James Burchill</a>
       </nav>
     </header>
 
@@ -105,7 +107,7 @@
     </main>
 
     <footer class="site-footer">
-      <span>Copyright {{ site.copyrightYear }} ~ <a href="https://JamesBurchill.com">JamesBurchill.com</a></span>
+      <span>Copyright {{ site.copyrightYear }} ~ <a href="https://jamesburchill.com/">James Burchill</a></span>
       <span>Markdown source is canonical.</span>
       <a href="https://jamesburchill.com/mcp/">Connect your AI assistant</a>
       <a href="/books-resources/">Books &amp; Resources</a>

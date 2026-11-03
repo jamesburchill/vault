@@ -1,12 +1,12 @@
 ---
 title: About The Vault
-description: The content library of James Burchill, Business Systems Architect, CTO, and bestselling author.
+description: Essays, field notes and practical guides by James Burchill, Business Systems Architect, CTO and bestselling author.
 permalink: /about/
 ---
 
 # About the Vault
 
-I’m James Burchill—a Business Systems Architect, CTO, and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
+I’m James Burchill, a Business Systems Architect, CTO, and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
 
 Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my collection of writing, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
 
@@ -20,11 +20,11 @@ These are field notes, not a claim that every question is settled. I distinguish
 
 ## The Work Behind the Writing
 
-I currently serve as CTO at Tooljar and pursue independent projects, including [Driftinel](https://jamesburchill.com/driftinel/), a software project I’m developing.
+I currently serve as CTO at Tooljar and pursue independent projects, including [Driftinel](https://driftinel.com/), my independent software project: a managed service in development to help businesses spot missed commitments and emerging problems.
 
 I’ve also written three bestselling books and taught at Sheridan College and McMaster University. Writing, teaching, and building systems continue to inform the ideas I explore here.
 
-You can find more about me at [JamesBurchill.com](https://jamesburchill.com/) or on [LinkedIn](https://www.linkedin.com/in/jamesburchill/).
+You can find more about me at [James Burchill’s author site](https://jamesburchill.com/#about) or on [LinkedIn](https://www.linkedin.com/in/jamesburchill/).
 
 ## Finding Your Way Around
 
