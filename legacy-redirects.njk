@@ -1,0 +1,30 @@
+---
+pagination:
+  data: legacyAliases
+  size: 1
+  alias: redirect
+legacyAliases:
+  - from: /everything/
+    to: https://vault.jamesburchill.com/content/
+  - from: /strategy/if-it-cant-say-no-its-not-an-agent/
+    to: https://vault.jamesburchill.com/content/2025/05/if-it-cant-say-no-its-not-an-agent/
+  - from: /ai/alchemy-to-ai-historical-parallels-in-public-and-governmental-attitudes-towards-groundbreaking-technologies/
+    to: https://vault.jamesburchill.com/content/2024/04/alchemy-to-ai-historical-parallels-in-public-and-governmental-attitudes-towards-groundbreaking-technologies/
+permalink: "{{ redirect.from }}"
+layout: false
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page moved</title>
+  <link rel="canonical" href="{{ redirect.to }}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0;url={{ redirect.to }}">
+</head>
+<body>
+  <main><h1>This page has moved.</h1><p><a href="{{ redirect.to }}">Continue to the current page</a>.</p></main>
+</body>
+</html>

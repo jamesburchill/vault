@@ -124,7 +124,7 @@ Because one thing is clear: AI agents won’t get safer unless we _decide_ how
 
 * * *
 
-## Final Thought: [If It Can’t Say No, It’s Not an Agent](https://vault.jamesburchill.com/strategy/if-it-cant-say-no-its-not-an-agent/)
+## Final Thought: [If It Can’t Say No, It’s Not an Agent](https://vault.jamesburchill.com/content/2025/05/if-it-cant-say-no-its-not-an-agent/)
 
 Agency requires discretion. The ability to decline. To evaluate.
 

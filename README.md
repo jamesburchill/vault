@@ -12,6 +12,8 @@ Content is written as Markdown and published as a static site with Eleventy and 
 
 On every push to `main`, GitHub Actions builds the site and deploys the generated `_site/` output to GitHub Pages.
 
+GitHub Pages enforces HTTPS for `vault.jamesburchill.com`; keep this setting enabled so HTTP requests redirect to HTTPS.
+
 ## Source Layout
 
 - `index.md` controls the public homepage and selected starting points.
@@ -25,6 +27,7 @@ On every push to `main`, GitHub Actions builds the site and deploys the generate
 - `search-index.json.njk`, `feeds/vault.json.njk`, `feeds/rss.xml.njk`, `llms.txt.njk`, and `sitemap.xml.njk` generate machine-readable discovery files.
 - `404.md` controls the GitHub Pages not-found page.
 - `redirects.njk` generates static redirect pages for imported WordPress URLs using `original_url`.
+- `legacy-redirects.njk` preserves additional reviewed aliases for existing pages; it does not restore retired content.
 - `scripts/generate-provenance.mjs` writes post-build provenance files into `_site/`.
 - `scripts/validate-provenance.mjs` checks the generated provenance index, per-article documents, and rendered HTML hashes.
 

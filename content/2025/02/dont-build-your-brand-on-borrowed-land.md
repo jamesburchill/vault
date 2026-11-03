@@ -2,7 +2,7 @@
 title: "Don’t Build Your Brand on Borrowed Land!"
 date: 2025-02-26
 slug: dont-build-your-brand-on-borrowed-land
-summary: "You’re playing a dangerous game if your brand relies entirely on social media platforms. Lately, we’ve seen massive shifts in social media rules, regulations, ownership changes, and even associations with extreme ideologies. What does that mean for you? The solution? Build your brand on assets YOU control — your website, your email list, and your"
+summary: "Why your website, email list and other assets you control should form the foundation of your brand, with social media as a supporting tool."
 topics:
   - marketing
   - strategy
@@ -20,11 +20,11 @@ featured_image: "/assets/2025/02/dont-build-your-brand-on-borrowed-land-borrowed
 ![Don’t Build Your Brand on Borrowed Land!](/assets/2025/02/dont-build-your-brand-on-borrowed-land-borrowedland.jpg)
 
 
-# You’re playing a dangerous game if your brand relies entirely on social media platforms.
+## You’re playing a dangerous game if your brand relies entirely on social media platforms.
 
 Lately, we’ve seen massive shifts in social media rules, regulations, ownership changes, and even associations with extreme ideologies.
 
-# What does that mean for you?
+## What does that mean for you?
 
 *   **Platforms Can Ban You** — Policies change overnight, and one algorithm tweak can erase your reach.
 *   **Ownership Shifts** — A new owner with a different agenda can turn your audience into their product, not yours.

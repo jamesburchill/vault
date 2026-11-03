@@ -2,7 +2,7 @@
 title: "Meet AUALA, my new 2024 Honda GoldWing (First ride impressions)"
 date: 2024-04-06
 slug: meet-auala-my-new-2024-honda-goldwing-first-ride-impressions
-summary: "Today (April 6, 2024) I picked up my new Honda GoldWing DCT. I’ve named her AUALA, Latin for Gold Wing, today was my very first time riding my new bike. Also my first time riding a GoldWing too. Talk about underselling the experience! This bike blows me away, and I’m so excited to get out"
+summary: "First-ride impressions of my 2024 Honda GoldWing DCT, named AUALA, after collecting it on April 6, 2024."
 topics:
   - general
   - bikerlife
