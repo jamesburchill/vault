@@ -1,6 +1,6 @@
 ---
 title: Writing
-description: Dated writing, notes, references, and source material.
+description: Essays, field notes and practical guides by James Burchill. Browse recent writing, subjects, reading paths and the chronological archive.
 permalink: /content/
 ---
 
