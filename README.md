@@ -182,6 +182,14 @@ Site CSS constrains article images to the text width. An image-only first paragr
 
 When revising an existing argument, preserve its slug and original publication date, add `updated` front matter, and include a visible review note explaining the substantive change.
 
+## Visual Identity
+
+The Vault shares the author site's forest green, warm ivory and parchment palette.
+Muted brass is reserved for small accents and focus indicators; body text and
+underlined links stay dark for reading contrast. Georgia headings pair with the
+existing system sans-serif body font, without external font downloads. Shared
+colours and typography are defined in `assets/stylesheets/extra.css`.
+
 ## Local Preview
 
 Install dependencies once:
