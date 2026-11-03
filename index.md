@@ -1,6 +1,6 @@
 ---
 title: The Vault -- Essays and Field Notes by James Burchill
-description: Business, technology, and practical ideas from James Burchill, Business Systems Architect, CTO, and bestselling author.
+description: Essays, field notes and practical guides by James Burchill, founder of Driftinel, systems architect, CTO and bestselling author.
 permalink: /
 ---
 
@@ -12,7 +12,7 @@ permalink: /
 
 Essays, field notes and practical guides on how businesses and technology work, where assumptions break down, and how to make better decisions.
 
-I’m James Burchill, a Business Systems Architect, CTO and bestselling author. I write from experience building companies, leading engineering teams, developing software and turning complex problems into working solutions.
+I’m James Burchill, founder of [Driftinel](https://driftinel.com/), systems architect, CTO and bestselling author. I write from experience building companies, leading engineering teams, developing software and turning complex problems into working solutions.
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="/reading-paths/">Find a reading path</a>

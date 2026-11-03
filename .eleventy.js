@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("layout", "layout.njk");
   eleventyConfig.addGlobalData("site", {
     name: "The Vault - James Burchill",
-    description: "Business, technology, and practical ideas from James Burchill, Business Systems Architect, CTO, and bestselling author.",
+    description: "Essays, field notes and practical guides by James Burchill, founder of Driftinel, systems architect, CTO and bestselling author.",
     url: "https://vault.jamesburchill.com",
     repository: "https://github.com/jamesburchill/vault",
     copyrightYear: new Date().getFullYear(),

@@ -1,12 +1,12 @@
 ---
 title: About The Vault
-description: Essays, field notes and practical guides by James Burchill, Business Systems Architect, CTO and bestselling author.
+description: Essays, field notes and practical guides by James Burchill, founder of Driftinel, systems architect, CTO and bestselling author.
 permalink: /about/
 ---
 
 # About the Vault
 
-I’m James Burchill, a Business Systems Architect, CTO, and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
+I’m James Burchill, founder of [Driftinel](https://driftinel.com/), systems architect, CTO and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
 
 Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my collection of writing, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
 
@@ -20,7 +20,7 @@ These are field notes, not a claim that every question is settled. I distinguish
 
 ## The Work Behind the Writing
 
-I currently serve as CTO at Tooljar and pursue independent projects, including [Driftinel](https://driftinel.com/), my independent software project: a managed service in development to help businesses spot missed commitments and emerging problems.
+I’m the founder of [Driftinel](https://driftinel.com/), a managed service in development to help business owners keep their promises and catch problems early. I also serve as CTO at [Tooljar](https://tooljar.com/) and Principal & Systems Architect at JMG.
 
 I’ve also written three bestselling books and taught at Sheridan College and McMaster University. Writing, teaching, and building systems continue to inform the ideas I explore here.
 

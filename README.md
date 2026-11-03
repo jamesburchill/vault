@@ -2,7 +2,7 @@
 
 This repository is the source for the public vault at `https://vault.jamesburchill.com`.
 
-The Vault presents business, technology, and practical ideas from James Burchill, Business Systems Architect, CTO, and bestselling author. Its public identity aligns with jamesburchill.com; governing intelligent systems remains a topic within the broader library.
+The Vault presents essays, field notes and practical guides by James Burchill, founder of Driftinel, systems architect, CTO and bestselling author. Its public identity aligns with jamesburchill.com; governing intelligent systems remains a topic within the broader library.
 
 The public homepage is [index.md](index.md). This README is for operating the repository.
 
