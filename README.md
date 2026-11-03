@@ -189,6 +189,12 @@ Muted brass is reserved for small accents and focus indicators; body text and
 underlined links stay dark for reading contrast. Georgia headings pair with the
 existing system sans-serif body font, without external font downloads. Shared
 colours and typography are defined in `assets/stylesheets/extra.css`.
+The shared layout appends a SHA-256 content version to the stylesheet URL.
+Changing the CSS automatically changes that URL on the next build, so browsers
+fetch the new stylesheet when they load the updated HTML. Unchanged CSS retains
+its URL and can remain cached. Already-open or cached HTML updates on subsequent
+navigation or normal refresh, subject to GitHub Pages' HTML cache lifetime.
+
 
 ## Local Preview
 

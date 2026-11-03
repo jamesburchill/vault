@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const editorial = require('./editorial.cjs');
@@ -8,6 +9,20 @@ const nunjucks = require('nunjucks');
 const origin = 'https://vault.jamesburchill.com';
 const read = p => fs.readFileSync(path.join('_site', p), 'utf8');
 const page = url => read(new URL(url, origin).pathname + 'index.html');
+// Every rendered layout must reference the exact built CSS content version.
+const stylesheetVersion = createHash('sha256').update(fs.readFileSync('_site/assets/stylesheets/extra.css')).digest('hex').slice(0, 12);
+let styledPages = 0;
+for (const file of fs.readdirSync('_site', { recursive: true }).filter(p => p.endsWith('.html'))) {
+  const html = read(file);
+  const stylesheets = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)];
+  for (const match of stylesheets) {
+    const href = new URL(match[1], origin + '/' + file);
+    assert.equal(href.pathname, '/assets/stylesheets/extra.css', file);
+    assert.equal(href.search, `?v=${stylesheetVersion}`, file + ': stale or missing CSS version');
+    styledPages++;
+  }
+}
+assert.ok(styledPages > 112, 'Expected shared stylesheet on articles and navigation pages');
 const index = JSON.parse(read('search-index.json')).items;
 const full = JSON.parse(read('full-text-index.json')).items;
 const feed = JSON.parse(read('feeds/vault.json')).items;

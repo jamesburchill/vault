@@ -1,5 +1,6 @@
 const path = require("node:path");
 const fs = require("node:fs");
+const { createHash } = require("node:crypto");
 const editorial = require("./scripts/editorial.cjs");
 
 module.exports = function (eleventyConfig) {
@@ -27,6 +28,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("contentType", data => data.content_type || editorial.types[data.slug] || "");
   eleventyConfig.addFilter("withArticleMeta", (html, meta) => html.replace(/<\/h1>/i, match => match + meta));
   eleventyConfig.addFilter("topicQuery", value => encodeURIComponent(value));
+  eleventyConfig.addWatchTarget("assets/stylesheets/extra.css");
+  eleventyConfig.addGlobalData("stylesheetUrl", () => {
+    const stylesheet = "assets/stylesheets/extra.css";
+    const version = createHash("sha256").update(fs.readFileSync(stylesheet)).digest("hex").slice(0, 12);
+    return `/${stylesheet}?v=${version}`;
+  });
   eleventyConfig.addGlobalData("layout", "layout.njk");
   eleventyConfig.addGlobalData("site", {
     name: "The Vault - James Burchill",
