@@ -305,3 +305,18 @@ are not assumed to match the default card. Image alt metadata uses
 
 Favicons use `assets/vault-favicon.svg` and the square 512 × 512 PNG fallback,
 `assets/vault-favicon.png`. The existing on-page logo assets remain in place.
+
+## Sharing and favicon verification — November 4, 2026
+
+The new default card, sharing metadata, and square lion favicons were published
+in `b426554`. The local Eleventy build, deployment provenance validation, and
+GitHub Pages deployment passed. The live card and both favicon files load over
+HTTPS and match the source assets. LinkedIn Post Inspector was refreshed and
+visually verified with the sharper card. Native Facebook and X previews and
+Google’s displayed favicon were not verified.
+
+Article-specific featured images remain in use. The generated homepage metadata
+and a representative article were checked to confirm that default-card
+dimensions are not incorrectly applied to article artwork. Existing visible
+header/logo assets were preserved. No Search Console settings were changed for
+the Vault during this work; no further sharing or favicon fixes are pending.
