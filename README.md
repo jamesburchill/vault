@@ -293,3 +293,15 @@ The public MCP connection guide lives at `https://jamesburchill.com/mcp/`;
 the separate MCP service address remains `https://mcp.jamesburchill.com`.
 Shared visual cues are forest green `#263d31`, ivory `#fbf8ef`, parchment
 `#e9e2d5`, muted brass `#a17f4e` and Georgia headings, with sans-serif body text.
+
+## Default sharing image and favicon
+
+The shared layout uses `assets/vault-social-v2.jpg` (1200 × 630) for pages
+without a featured image. `assets/vault-social-card.svg` is its editable source.
+The card uses crisp serif lettering, the supplied rampant lion, and a solid white
+background. Article-specific featured images remain in use; their dimensions
+are not assumed to match the default card. Image alt metadata uses
+`featured_image_alt` when supplied, otherwise the page title.
+
+Favicons use `assets/vault-favicon.svg` and the square 512 × 512 PNG fallback,
+`assets/vault-favicon.png`. The existing on-page logo assets remain in place.

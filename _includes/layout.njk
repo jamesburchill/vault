@@ -4,7 +4,8 @@
     {% set metaTitle = title or site.name %}
     {% set metaDescription = description or summary or site.description %}
     {% set canonicalUrl = canonical_url or site.url + page.url %}
-    {% set metaImage = (featured_image or "/assets/theVault.png") | absoluteUrl(site.url) %}
+    {% set metaImage = (featured_image or "/assets/vault-social-v2.jpg") | absoluteUrl(site.url) %}
+    {% set metaImageAlt = featured_image_alt or (metaTitle if featured_image else "The Vault: essays and field notes by James Burchill, with a rampant lion") %}
     {% set isArticle = page.inputPath | isVaultArticle %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,8 @@
     <title>{% if page.url == "/" %}{{ metaTitle }}{% else %}{% if metaTitle and metaTitle != site.name %}{{ metaTitle }} | {% endif %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{{ metaDescription }}">
     <link rel="canonical" href="{{ canonicalUrl }}">
-    <link rel="icon" href="/assets/white-lion.png" type="image/png">
+    <link rel="icon" href="/assets/vault-favicon.png" type="image/png" sizes="512x512">
+    <link rel="icon" href="/assets/vault-favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="alternate" href="/feeds/rss.xml" type="application/rss+xml" title="{{ site.name }}">
     <link rel="alternate" href="/feeds/vault.json" type="application/feed+json" title="{{ site.name }}">
     <link rel="describedby" type="application/ld+json" href="/.well-known/provenance.json">
@@ -24,11 +26,18 @@
     <meta property="og:description" content="{{ metaDescription }}">
     <meta property="og:url" content="{{ canonicalUrl }}">
     <meta property="og:image" content="{{ metaImage }}">
+    <meta property="og:image:alt" content="{{ metaImageAlt }}">
+    {% if not featured_image %}
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    {% endif %}
     <meta property="og:site_name" content="{{ site.name }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ metaTitle }}">
     <meta name="twitter:description" content="{{ metaDescription }}">
     <meta name="twitter:image" content="{{ metaImage }}">
+    <meta name="twitter:image:alt" content="{{ metaImageAlt }}">
     {% if isArticle and date %}
     <meta property="article:published_time" content="{{ date | isoDate }}">
     {% endif %}
