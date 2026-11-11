@@ -50,6 +50,6 @@ No content has been published yet.
 
 ## The Deeper Framework
 
-The Vault is the broader collection of my writing. [Because Drift Happens](https://becausedrifthappens.com/) explores drift and governance; [Governing Intelligent Systems](/governing-intelligent-systems/) is its technical reading guide within the Vault. [Driftinel](https://driftinel.com/) is my independent software project, a managed service in development to help businesses spot missed commitments and emerging problems.
+The Vault is the broader collection of my writing. [Because Drift Happens](https://becausedrifthappens.com/) explores drift and governance; [Governing Intelligent Systems](/governing-intelligent-systems/) is its technical reading guide within the Vault. [Driftinel](https://driftinel.com/) is my independent software project, a managed service operating in an invite-only pilot to help businesses spot missed commitments and emerging problems. It is not generally available.
 
 {% include "follow.njk" %}

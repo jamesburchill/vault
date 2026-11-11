@@ -20,7 +20,7 @@ These are field notes, not a claim that every question is settled. I distinguish
 
 ## The Work Behind the Writing
 
-I’m the founder of [Driftinel](https://driftinel.com/), a managed service in development to help business owners keep their promises and catch problems early. I also serve as CTO at [Tooljar](https://tooljar.com/) and Principal & Systems Architect at JMG.
+I’m the founder of [Driftinel](https://driftinel.com/), a managed service operating in an invite-only pilot to help business owners keep their promises and catch problems early. It is not generally available. I also serve as CTO at [Tooljar](https://tooljar.com/) and Principal & Systems Architect at JMG.
 
 I’ve also written three bestselling books and taught at Sheridan College and McMaster University. Writing, teaching, and building systems continue to inform the ideas I explore here.
 

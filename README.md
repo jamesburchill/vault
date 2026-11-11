@@ -283,7 +283,8 @@ Use **James Burchill** for the author and **The Vault** for the writing destinat
 The author site introduces James and his work; the Vault holds essays, field notes,
 practical guides and resources. Because Drift Happens is the drift/governance
 framework, Governing Intelligent Systems is a reading guide within the Vault,
-and Driftinel is an independent managed-service project in development.
+and Driftinel is an independent managed service operating in an invite-only
+pilot. It is not generally available.
 
 Use lowercase HTTPS URLs with trailing slashes for cross-site page links:
 `https://jamesburchill.com/`, `https://vault.jamesburchill.com/`,
