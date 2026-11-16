@@ -321,3 +321,11 @@ and a representative article were checked to confirm that default-card
 dimensions are not incorrectly applied to article artwork. Existing visible
 header/logo assets were preserved. No Search Console settings were changed for
 the Vault during this work; no further sharing or favicon fixes are pending.
+
+## Homepage drift alignment — November 16, 2026
+
+The homepage keeps the Vault’s broad business, technology, and judgement focus while introducing drift as a recurring thread across the writing. The author introduction links to James’s personal site. The deeper-framework section distinguishes the public doctrine and technical reading guide from JMG’s practical services and the product family. Driftinel is invitation-only, Telemetry Sentinel invites tailored monitoring proposals, and BaileyBot is waitlist-only. Selected starting points, reading paths, recent-writing generation, RSS/subscription paths, and article content are unchanged.
+
+The change is limited to homepage body copy and this handoff. Homepage front matter, shared templates/configuration, metadata, canonical URLs, article sources, images, and SEO/discovery machinery are preserved.
+
+Validation: `npm run build`, provenance validation, and full-text-index validation pass for 113 published articles. Compared all 113 article sources and rendered article pages against the pre-change build: byte-identical. Search/full-text/JSON-feed article data, sitemap URLs, and homepage title/metadata/canonical are preserved; homepage links/anchors pass checks. Desktop and mobile layouts were inspected, with no horizontal overflow at 390 pixels and homepage images loaded.

@@ -10,9 +10,11 @@ permalink: /
 
 # Business, Technology and Better Judgement
 
-Essays, field notes and practical guides on how businesses and technology work, where assumptions break down, and how to make better decisions.
+Essays, field notes, and practical guides on business, technology, and better judgement—how things work, where assumptions break down, and what deserves attention.
 
-I’m James Burchill, founder of [Driftinel](https://driftinel.com/), systems architect, CTO and bestselling author. I write from experience building companies, leading engineering teams, developing software and turning complex problems into working solutions.
+I’m [James Burchill](https://jamesburchill.com/), systems architect, CTO, and bestselling author. I write from experience building companies, leading engineering teams, developing software, and turning complex problems into working solutions.
+
+A recurring theme is drift: the gap between what we intend and what happens. I explore how to notice meaningful change, question assumptions, and respond with enough context and time to act.
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="/reading-paths/">Find a reading path</a>
@@ -50,6 +52,16 @@ No content has been published yet.
 
 ## The Deeper Framework
 
-The Vault is the broader collection of my writing. [Because Drift Happens](https://becausedrifthappens.com/) explores drift and governance; [Governing Intelligent Systems](/governing-intelligent-systems/) is its technical reading guide within the Vault. [Driftinel](https://driftinel.com/) is my independent software project, a managed service operating in an invite-only pilot to help businesses spot missed commitments and emerging problems. It is not generally available.
+The Vault is the broader collection of my writing. [Because Drift Happens](https://becausedrifthappens.com/) develops the drift doctrine and framework; [Governing Intelligent Systems](/governing-intelligent-systems/) is its technical reading guide within the Vault.
+
+## From Ideas to Practical Work
+
+Through [James Media Group](https://jamesmediagroup.ca/), I apply the same thinking to consulting, custom software, automation, monitoring, and implementation. Bring a problem to investigate or a defined project to deliver.
+
+My product work explores different ways to keep commitments, conditions, and follow-through in view:
+
+- [Driftinel](https://driftinel.com/) helps identify slipping commitments in approved email accounts, with supporting messages to guide follow-up. Access is by invitation; it is not generally available.
+- [Telemetry Sentinel](https://telemetrysentinel.com/) offers tailored remote monitoring proposals for environmental conditions, device telemetry, power, and signals that go quiet.
+- [BaileyBot](https://baileybot.com/) is an email-first follow-through assistant being built around deadlines, renewals, and promises. It is currently waitlist-only.
 
 {% include "follow.njk" %}
