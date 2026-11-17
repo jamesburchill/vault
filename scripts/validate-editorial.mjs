@@ -51,7 +51,9 @@ for (const item of index) {
   assert.ok(!html.includes('Get new essays and field notes by email.'));
   assert.ok(html.includes('Follow new writing by RSS'));
   assert.ok(rss.includes(item.url));
-  assert.ok(sitemap.includes(item.url));
+  const excludedFromSitemap = /^sitemap: false$/m.test(fs.readFileSync(item.source_path, 'utf8'));
+  assert.equal(sitemap.includes(item.url), !excludedFromSitemap, item.slug + ': sitemap inclusion');
+  if (excludedFromSitemap) assert.ok(html.includes('<meta name="robots" content="noindex, follow">'));
   const parts = new URL(item.url).pathname.split('/');
   for (const archive of [`/content/${parts[2]}/`, `/content/${parts[2]}/${parts[3]}/`]) {
     assert.ok(links(page(archive), archive).some(u => u.href === item.url), `${archive} omits ${item.slug}`);

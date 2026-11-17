@@ -5,6 +5,8 @@ slug: test-for-2025
 summary: ""
 topics: []
 status: published
+robots: "noindex, follow"
+sitemap: false
 ---
 
 # Test for 2025

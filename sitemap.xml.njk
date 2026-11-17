@@ -28,12 +28,14 @@ eleventyExcludeFromCollections: true
   <url><loc>{{ site.url }}/subjects/{{ subject.id }}/</loc></url>
 {%- endfor %}
 {%- for item in collections.vaultContent %}
+{%- if item.data.sitemap != false %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
     {% if item.data.updated or item.data.modified %}
     <lastmod>{{ (item.data.updated or item.data.modified) | dateOnly }}</lastmod>
     {% endif %}
   </url>
+{%- endif %}
 {%- endfor %}
 {%- for year in collections.vaultYears %}
   <url>

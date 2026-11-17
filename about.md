@@ -1,14 +1,14 @@
 ---
 title: About The Vault
-description: Essays, field notes, and practical guides by James Burchill on business, technology, judgement, and the drift between what we intend and what happens.
-featured_image: /assets/vault-social-drift.jpg
-featured_image_alt: "The Vault by James Burchill. Understanding change. Keeping intent in view."
+description: About James Burchill and The Vault, a collection of essays, field notes and practical knowledge shaped by four decades of building, writing and teaching.
+featured_image: /assets/vault-social-2026-11-17.png
+featured_image_alt: "The Vault by James Burchill. Essays and field notes."
 permalink: /about/
 ---
 
 # About the Vault
 
-I’m James Burchill, founder of [Driftinel](https://driftinel.com/), systems architect, CTO and bestselling author. Over nearly four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
+I’m James Burchill, founder of [Driftinel](https://driftinel.com/), systems architect, CTO and bestselling author. Over four decades, I have founded companies, led engineering teams, built software, written, taught, and worked with organizations navigating change.
 
 Software engineering, publishing, marketing, teaching, and entrepreneurship all inform how I approach a problem. The Vault is my collection of writing, bringing those perspectives together in practical knowledge, essays, field notes, and resources.
 

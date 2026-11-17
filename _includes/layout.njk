@@ -4,14 +4,15 @@
     {% set metaTitle = title or site.name %}
     {% set metaDescription = description or summary or site.description %}
     {% set canonicalUrl = canonical_url or site.url + page.url %}
-    {% set metaImage = (featured_image or "/assets/vault-social-v2.jpg") | absoluteUrl(site.url) %}
-    {% set metaImageAlt = featured_image_alt or (metaTitle if featured_image else "The Vault: essays and field notes by James Burchill, with a rampant lion") %}
+    {% set metaImage = (featured_image or "/assets/vault-social-2026-11-17.png") | absoluteUrl(site.url) %}
+    {% set metaImageAlt = featured_image_alt or (metaTitle if featured_image else "The Vault by James Burchill. Essays and field notes.") %}
     {% set isArticle = page.inputPath | isVaultArticle %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#263d31">
     <title>{% if page.url == "/" %}{{ metaTitle }}{% else %}{% if metaTitle and metaTitle != site.name %}{{ metaTitle }} | {% endif %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{{ metaDescription }}">
+    {% if robots %}<meta name="robots" content="{{ robots }}">{% endif %}
     <link rel="canonical" href="{{ canonicalUrl }}">
     <link rel="icon" href="/assets/vault-favicon.png" type="image/png" sizes="512x512">
     <link rel="icon" href="/assets/vault-favicon.svg" type="image/svg+xml" sizes="any">
@@ -28,7 +29,7 @@
     <meta property="og:image" content="{{ metaImage }}">
     <meta property="og:image:alt" content="{{ metaImageAlt }}">
     {% if not featured_image %}
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     {% endif %}
@@ -71,6 +72,18 @@
   "dateModified": {{ (updated or modified) | isoDate | json | safe }}{% endif %}{% if original_url %},
   "isBasedOn": {{ original_url | json | safe }}{% endif %}
 }
+    </script>
+    {% endif %}
+    {% if not isArticle %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {"@type": "Person", "@id": "https://jamesburchill.com/#person", "name": "James Burchill", "url": "https://jamesburchill.com/"},
+        {"@type": "WebSite", "@id": "https://vault.jamesburchill.com/#website", "name": "The Vault", "url": "https://vault.jamesburchill.com/", "description": {{ site.description | json | safe }}, "inLanguage": "en-CA", "publisher": {"@id": "https://jamesburchill.com/#person"}},
+        {"@type": "WebPage", "@id": {{ (canonicalUrl + "#webpage") | json | safe }}, "name": {{ metaTitle | json | safe }}, "description": {{ metaDescription | json | safe }}, "url": {{ canonicalUrl | json | safe }}, "inLanguage": "en-CA", "isPartOf": {"@id": "https://vault.jamesburchill.com/#website"}, "author": {"@id": "https://jamesburchill.com/#person"}}
+      ]
+    }
     </script>
     {% endif %}
     <link rel="stylesheet" href="{{ stylesheetUrl }}">

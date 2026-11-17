@@ -1,8 +1,8 @@
 ---
-title: The Vault -- Essays and Field Notes by James Burchill
-description: Essays, field notes, and practical guides by James Burchill on business, technology, judgement, and the drift between what we intend and what happens.
-featured_image: /assets/vault-social-drift.jpg
-featured_image_alt: "The Vault by James Burchill. Understanding change. Keeping intent in view."
+title: The Vault | Essays and Field Notes by James Burchill
+description: Essays, field notes and practical guides by James Burchill on business, technology and judgement. Explore the writing, resources and reading paths.
+featured_image: /assets/vault-social-2026-11-17.png
+featured_image_alt: "The Vault by James Burchill. Essays and field notes."
 permalink: /
 ---
 

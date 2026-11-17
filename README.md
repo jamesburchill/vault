@@ -297,10 +297,10 @@ Shared visual cues are forest green `#263d31`, ivory `#fbf8ef`, parchment
 
 ## Default sharing image and favicon
 
-The shared layout uses `assets/vault-social-v2.jpg` (1200 × 630) for pages
-without a featured image. `assets/vault-social-card.svg` is its editable source.
-The card uses crisp serif lettering, the supplied rampant lion, and a solid white
-background. Article-specific featured images remain in use; their dimensions
+The shared layout uses the approved `assets/vault-social-2026-11-17.png` (1200 × 630) for pages
+without a featured image. `assets/vault-social-2026-11-17.svg` is its editable source.
+The card introduces essays and field notes with forest-green and teal lettering
+on warm ivory. Earlier sharing assets remain available. Article-specific featured images remain in use; their dimensions
 are not assumed to match the default card. Image alt metadata uses
 `featured_image_alt` when supplied, otherwise the page title.
 
@@ -335,3 +335,9 @@ Validation: `npm run build`, provenance validation, and full-text-index validati
 Homepage and About metadata now describe the broad writing library through business, technology, judgement, and drift. Those two pages use the new `assets/vault-social-drift.jpg` sharing card, with editable SVG source and explicit alt text. The existing logo/artwork and author identity are retained, with “Understanding change. Keeping intent in view.” Article Markdown, article metadata/templates, existing fallback artwork, feeds, canonical URLs, sitemap paths, and other site pages remain unchanged. The product family is already introduced on the homepage; the preview remains author/library focused.
 
 Validation for the sharing audit: 1200×630 artwork was rendered and visually inspected, with no clipped text. Metadata, canonicals, JSON-LD, local links, and unchanged visible body copy passed targeted checks. Vault additionally passed its build/provenance/full-text validations and preserved all 113 article sources/rendered pages and article feed entries. Bailey’s explicit seven-file artifact was assembled and checked locally. James authorized publication, commit, and push; native platform preview caches and search rankings require separate verification.
+
+## Approved sharing and search refresh — November 17, 2026
+
+Homepage and site-wide fallback metadata describe the writing library through business, technology and judgement. Homepage/About and fallback previews use the approved `assets/vault-social-2026-11-17.png` card, with editable SVG retained. Article titles, summaries, explicit artwork and canonical URLs remain page-specific. About and four subject pages have distinct descriptions; About now says four decades. Landing pages supply author, website and page identity schema. The published Test for 2025 placeholder retains its URL and file, with `noindex, follow` and `sitemap: false`; the sitemap template honours that explicit flag. It remains available through existing archives and feeds.
+
+Validation: Eleventy build, provenance, full-text-index and editorial validators passed for all 113 articles. Generated canonicals, article titles and explicit featured artwork are preserved across 245 existing HTML pages; visible main content changes only the approved About biography wording. The four subject descriptions are distinct. The placeholder is served with `noindex, follow` and excluded from the sitemap.

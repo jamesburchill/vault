@@ -1,9 +1,9 @@
 // Explicit subject mappings; unmapped topics remain searchable.
 const subjects = [
-  { id: "building-with-ai", title: "Building with AI", topics: ["ai", "ai-governance", "autonomous-agents", "local-ai", "local-first-ai", "mcp", "safeagent", "token-accounting"] },
-  { id: "architecture-and-operations", title: "Architecture and Operations", topics: ["architecture", "operational-resilience", "containerization", "docker", "security", "software-engineering", "software-supply-chain", "interoperability", "data-portability", "tech-stack"] },
-  { id: "business-and-product", title: "Business and Product", topics: ["business", "product", "marketing", "solopreneur", "strategy"] },
-  { id: "writing-and-judgement", title: "Writing and Judgement", pathAnchor: "writing-and-judgment", topics: ["publishing", "markdown", "decisions", "mindset", "ai-search"] }
+  { id: "building-with-ai", title: "Building with AI", description: "Essays and field notes on building with AI, connecting useful information and designing systems with clear boundaries and human control.", topics: ["ai", "ai-governance", "autonomous-agents", "local-ai", "local-first-ai", "mcp", "safeagent", "token-accounting"] },
+  { id: "architecture-and-operations", title: "Architecture and Operations", description: "Practical writing on software architecture, operational resilience, security and the decisions that make systems easier to maintain, recover and trust.", topics: ["architecture", "operational-resilience", "containerization", "docker", "security", "software-engineering", "software-supply-chain", "interoperability", "data-portability", "tech-stack"] },
+  { id: "business-and-product", title: "Business and Product", description: "Essays and field notes on building useful products, sustainable businesses and strategies grounded in customer needs and practical judgement.", topics: ["business", "product", "marketing", "solopreneur", "strategy"] },
+  { id: "writing-and-judgement", title: "Writing and Judgement", description: "Writing on publishing, communicating ideas, inspecting evidence and making better decisions in business and technology.", pathAnchor: "writing-and-judgment", topics: ["publishing", "markdown", "decisions", "mindset", "ai-search"] }
 ];
 const selections = {
   "by-inches": [{ slug: "ai-can-generate-software-reality-still-gets-a-vote", reason: "Take the question of assumptions into building software with AI." }],
