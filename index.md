@@ -64,6 +64,5 @@ My product work explores different ways to keep commitments, conditions, and fol
 
 - [Driftinel](https://driftinel.com/) helps identify slipping commitments in approved email accounts, with supporting messages to guide follow-up. Access is by invitation; it is not generally available.
 - [Telemetry Sentinel](https://telemetrysentinel.com/) offers tailored remote monitoring proposals for environmental conditions, device telemetry, power, and signals that go quiet.
-- [BaileyBot](https://baileybot.com/) is an email-first follow-through assistant being built around deadlines, renewals, and promises. It is currently waitlist-only.
 
 {% include "follow.njk" %}
